@@ -1,0 +1,102 @@
+/*******************************************************/
+/****************************************general styles*/
+.offer {
+
+}
+
+/****************************************general styles*/
+/*******************************************************/
+/*****************************registration block markup*/
+.offer-block {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.offer-block .offer-block__switch {
+    display: inline-block;
+    margin: 0 100px 0 0;
+    padding: 25px 0 0 0;
+}
+
+.offer-block .offer-block__switch-item {
+    font-size: 14px;
+    color: #969696;
+    font-weight: 600;
+}
+
+.offer-block .offer-block__switch-item_active {
+    color: #000000;
+}
+
+.offer-block__header {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+.offer-block .offer-block__input-block {
+    display: inline-block;
+    width: 30%
+}
+
+.offer-block .offer-block__form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.offer-block .offer-block__input {
+    margin: 0 auto 30px;
+}
+
+.offer-block .offer-block__input_toggle {
+
+}
+
+.offer-block .offer-block__input_hide {
+    display: none;
+}
+
+.offer-block .offer-block__label {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.offer-block .offer-block__label_checkbox {
+    display: inline-block;
+}
+
+.offer-block .offer-block__place {
+    width: 100%;
+    margin: 7px 0 0 0;
+    border: 1px solid #000000;
+}
+
+.offer-block .offer-block__place_checkbox {
+    width: 30px;
+    display: inline-block;
+}
+
+.offer-block .offer-block__place_checkbox_active {
+
+}
+
+.offer-block .offer-block__button {
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 35px;
+    margin: 0 0 18px 0;
+    border-style: none;
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    right: 60px;
+}
+
+/*****************************registration block markup*/
+/*******************************************************/
+/*****************************************mobile styles*/
+
+/*******************************************************/
+/*****************************************mobile styles*/

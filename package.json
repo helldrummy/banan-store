@@ -1,0 +1,27 @@
+{
+  "name": "planeta-promocode",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Michael Birchenko",
+  "license": "ISC",
+  "homepage": "",
+  "description": ""
+}

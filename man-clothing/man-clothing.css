@@ -1,0 +1,66 @@
+/*******************************************************/
+/****************************************general styles*/
+.man-clothing, .woman-clothing {
+    font-family: Bebas;
+}
+
+.man-clothing .head-block__button_man:after, .woman-clothing .head-block__button_woman:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: width .3s ease-in-out;
+    margin-top: 3px;
+}
+
+/****************************************general styles*/
+/*******************************************************/
+/*************************************main block markup*/
+.man-clothing .ware-block, .woman-clothing .ware-block {
+    display: block;
+    text-align: center;
+    margin: 0 auto 100px;
+    max-width: 1360px;
+    width: 100%;
+    padding: 40px;
+}
+
+.item-block {
+    width: 100%;
+    max-width: 315px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.item-block .item-block__img {
+    width: 100%;
+    margin: 0 0 10px 0;
+    transition: 1s;
+}
+
+.item-block:hover .item-block__img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.item-block .item-block__text {
+    text-align: left;
+    padding: 0 0 0 30px;
+}
+
+.item-block .item-block__name {
+    font-size: 16px;
+}
+
+.item-block .item-block__price {
+    font-size: 16px;
+}
+
+/*************************************main block markup*/
+/*******************************************************/
+/*****************************************mobile styles*/
+
+/*******************************************************/
+/*****************************************mobile styles*/

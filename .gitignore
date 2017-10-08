@@ -1,0 +1,8 @@
+.idea
+.idea/*
+_test
+_test/*
+dist
+dist/*
+node_modules
+node_modules/*

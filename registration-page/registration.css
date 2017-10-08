@@ -1,0 +1,76 @@
+/*******************************************************/
+/****************************************general styles*/
+.registration {
+
+}
+
+.inputs-wrap {
+    width: 100%;
+    max-width: 1360px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0px;
+}
+
+/****************************************general styles*/
+/*******************************************************/
+/*****************************registration block markup*/
+.input-block {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.password .input-block {
+    width: 100%;
+}
+
+.input-block .input-block__header {
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-block .input-block__form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-block .input-block__input {
+    margin: 0 auto 30px;
+}
+
+.input-block .input-block__label {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.input-block .input-block__place {
+    width: 100%;
+    margin: 7px 0 0 0;
+    border: 1px solid #000000;
+}
+
+.input-block .input-block__button {
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 35px;
+    margin: 0 0 18px 0;
+    border-style: none;
+
+}
+
+.input-block .input-block__recovery {
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+/*****************************registration block markup*/
+/*******************************************************/
+/*****************************************mobile styles*/
+
+/*******************************************************/
+/*****************************************mobile styles*/

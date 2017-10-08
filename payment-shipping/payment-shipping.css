@@ -1,0 +1,35 @@
+/*******************************************************/
+/****************************************general styles*/
+.payment-shipping .info {
+    width: 100%;
+    max-width: 90%;
+
+    display: block;
+    margin: 0 auto 115px;
+}
+/****************************************general styles*/
+/*******************************************************/
+/************************************about block markup*/
+.payment-shipping .info .info__item {
+    width: 100%;
+    display: block;
+    margin: 0 auto 35px;
+
+    text-align: left;
+}
+
+.payment-shipping .info .info__header {
+    font-size: 24px;
+    margin: 0 0 25px 0;
+}
+
+.payment-shipping .info .info__text {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+/************************************about block markup*/
+/*******************************************************/
+/*****************************************mobile styles*/
+
+/*******************************************************/
+/*****************************************mobile styles*/

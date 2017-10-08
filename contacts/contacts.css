@@ -1,0 +1,63 @@
+/*******************************************************/
+/****************************************general styles*/
+.contacts-block {
+    display: block;
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/****************************************general styles*/
+/*******************************************************/
+/*****************************registration block markup*/
+.contacts-block .contacts-block__text {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.contacts-block .contacts-block__text_margin {
+    margin: 15px 0 25px;
+}
+
+.contacts-block .contacts-block__number {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.contacts-block .contacts-block__link {
+    display: inline-block;
+    text-decoration: underline;
+    color: #000000;
+    font-size: 16px;
+}
+
+.contacts-block .contacts-block__shops {
+    border-top: 2px solid#000000;
+    padding: 35px 0 0 0;
+    min-height: 440px;
+}
+
+.contacts-block .contacts-block__shops-head {
+    margin: 0 0 20px 0;
+}
+
+.contacts-block .contacts-block__city-block {
+    display: inline-block;
+    width: 25%;
+
+}
+
+.contacts-block .contacts-block__city-head {
+    margin: 0 0 20px 0 ;
+    font-weight: 600;
+}
+
+.contacts-block .contacts-block__city-shop {
+    margin: 0 0 15px 0;
+}
+/*****************************registration block markup*/
+/*******************************************************/
+/*****************************************mobile styles*/
+
+/*******************************************************/
+/*****************************************mobile styles*/

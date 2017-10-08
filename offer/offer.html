@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Offer page</title>
+    <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="body offer">
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------header begin---------------------------------------------------------->
+<div class="header">
+    <a href="#" class="header__item header__item_first">Бесплатная доставка по Украине 1-2 дня</a><!--
+    --><a href="#" class="header__item header__item_second">Бесплатный возврат или обмен 30 дней</a><!--
+    --><a href="#" class="header__item header__item_third">Скидка 5% при оплате картой</a>
+</div>
+<!------------------------------------------------header end----------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------head begin----------------------------------------------------------->
+<div class="head-block">
+    <div class="head-block__links">
+        <p class="head-block__link-item">093 760 42 51</p>
+        <a href="#" class="head-block__link-item">Поддержка/FAQ</a>
+        <a href="#" class="head-block__link-item">Оплата и доставка</a>
+    </div>
+    <div class="head-block__category">
+        <a href="../index.html" class="head-block__logo">
+            <img src="../images/banan-logo_black.png" alt="banan store logotype" class="head-block__logo-img">
+        </a>
+        <div class="head-block__main-sections">
+            <a href="../woman-clothing/woman-clothing.html"
+               class="head-block__button head-block__button_woman category-button">Женское</a>
+            <a href="" class="head-block__button head-block__button_man category-button">Мужское</a>
+        </div>
+    </div>
+    <div class="head-block__user">
+        <a href="#" class="head-block__user-item">Корзина</a>
+        <p class="head-block__cart-counter">: 1</p>
+        <a href="#" class="head-block__user-item head-block__user-item_registered-user">Личный кабинет</a>
+        <a href="#" class="head-block__user-item">Вход</a>
+    </div>
+</div>
+<!-------------------------------------------------head end------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------registration block begin---------------------------------------------------->
+<div class="offer-block wrapper">
+    <div class="offer-block__switch float_left">
+        <p class="offer-block__switch-item offer-block__switch-item_active">Адрес доставки</p>
+        <p class="offer-block__switch-item">Способ оплаты</p>
+    </div>
+
+    <div class="offer-block__input-block">
+        <form id="offer" class="offer-block__form" action="">
+            <div class="offer-block__input">
+                <label class="offer-block__label">E-mail</label>
+                <input required type="email" class="offer-block__place">
+            </div>
+            <p class="offer-block__header">Адрес Доставки</p>
+            <div class="offer-block__input">
+                <label class="offer-block__label">Имя Фамилия</label>
+                <input required type="text" class="offer-block__place">
+            </div>
+            <div class="offer-block__input">
+                <label class="offer-block__label">Город</label>
+                <input required type="text" class="offer-block__place">
+            </div>
+            <div class="offer-block__input offer-block__input_toggle">
+                <label class="offer-block__label">Номер отделения Новой Почты</label>
+                <input required type="text" class="offer-block__place">
+            </div>
+            <div class="offer-block__input offer-block__input_hide">
+                <label class="offer-block__label">Адрес доставки</label>
+                <input required type="text" class="offer-block__place">
+            </div>
+            <div class="offer-block__input">
+                <label class="offer-block__label">Телефон</label>
+                <input required type="text" class="offer-block__place">
+            </div>
+            <div class="offer-block__input">
+                <input required type="checkbox" class="offer-block__place offer-block__place_checkbox">
+                <label class="offer-block__label offer-block__label_checkbox">Я хочу доставку на дом (+20 грн)</label>
+            </div>
+        </form>
+    </div>
+    <input form="offer" type="submit" value="Продолжить" class="offer-block__button">
+</div>
+<!-------------------------------------------registration block end---------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------->
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="offer.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

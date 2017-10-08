@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    .navigation-bar {
+       text-align: center;
+        padding: 120px 0 0 0;
+    }
+
+    .navigation-bar .navigation-bar__item {
+        font-family: 'bebas_neueregular';
+        color: hotpink;
+        font-size: 30px;
+        text-transform: uppercase;
+        transition: 1.5s;
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+        cursor: pointer;
+        max-width: 355px;
+    }
+
+    .navigation-bar .navigation-bar__item:hover {
+        color: blue;
+        transition: 1.5s;
+    }
+
+    .navigation-bar .navigation-bar__item.navigation-bar__item_undone {
+        color: grey;
+    }
+</style>
+<body>
+<div class="navigation-bar">
+    <a href="index.html" target="_blank" class="navigation-bar__item">Main</a>
+    <a href="man-clothing/man-clothing.html" target="_blank" class="navigation-bar__item">Man</a>
+    <a href="woman-clothing/woman-clothing.html" target="_blank" class="navigation-bar__item">Woman</a>
+    <a href="item-page/item-page.html" target="_blank" class="navigation-bar__item">Item</a>
+    <a href="cart-page/cart-page.html" target="_blank" class="navigation-bar__item navigation-bar__item_undone ">Cart</a>
+    <a href="registration-page/registration.html" target="_blank" class="navigation-bar__item">Registration</a>
+    <a href="" target="_blank" class="navigation-bar__item navigation-bar__item_undone">Offer</a>
+    <a href="" target="_blank" class="navigation-bar__item navigation-bar__item_undone">User cabinet</a>
+    <a href="support/support.html" target="_blank" class="navigation-bar__item">Support</a>
+    <a href="payment-shipping/payment-shipping.html" target="_blank" class="navigation-bar__item">Payment and shipping</a>
+    <a href="contacts/contacts.html" target="_blank" class="navigation-bar__item">Contacts</a>
+    <a href="about/about.html" target="_blank" class="navigation-bar__item">About</a>
+    <a href="password-recovery/password.html" target="_blank" class="navigation-bar__item">Password recovery</a>
+</div>
+</body>
+</html>
