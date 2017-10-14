@@ -1,17 +1,20 @@
-
-function checkboxActivation(checkboxElement, checkboxActiveClass) {
-    $(checkboxElement).on('click', function () {
-        $(this).toggleClass(checkboxActiveClass)
-    });
-}
-
-
-function checkBoxIsActive(checkElement, ElementActiveClass, hidingElement, showElement) {
-    if ($(checkElement).hasClass(ElementActiveClass)) {
-        $(hidingElement).hide();
-        $(showElement).show();
+function checkBoxIsActive(checkElement, elementActiveClass, hidingElement, showElement) {
+    if ($(checkElement).hasClass(elementActiveClass)) {
+        $(hidingElement).toggleClass('display-none');
+        $(showElement).toggleClass('display-none');
     }
 }
 
-checkBoxIsActive('.offer-block__place_checkbox', 'offer-block__place_checkbox_active', '.offer-block__input_toggle', '.offer-block__input_hide');
-checkboxActivation('.offer-block__place_checkbox', 'offer-block__place_checkbox_active');
+function checkboxActivation(checkboxElement, checkboxActiveClass) {
+    $(checkboxElement).on('click', function () {
+        $(this).toggleClass(checkboxActiveClass);
+        checkBoxIsActive(
+            '.offer-block__place_checkbox',
+            'active',
+            '.offer-block__input_shipping',
+            '.offer-block__input_address'
+        );
+    });
+}
+
+checkboxActivation('.offer-block__place_checkbox', 'active');

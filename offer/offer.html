@@ -53,7 +53,7 @@
     </div>
 
     <div class="offer-block__input-block">
-        <form id="offer" class="offer-block__form" action="">
+        <form id="offer" class="offer-block__form offer-block__toggle" action="">
             <div class="offer-block__input">
                 <label class="offer-block__label">E-mail</label>
                 <input required type="email" class="offer-block__place">
@@ -67,11 +67,11 @@
                 <label class="offer-block__label">Город</label>
                 <input required type="text" class="offer-block__place">
             </div>
-            <div class="offer-block__input offer-block__input_toggle">
+            <div class="offer-block__input offer-block__input_shipping">
                 <label class="offer-block__label">Номер отделения Новой Почты</label>
                 <input required type="text" class="offer-block__place">
             </div>
-            <div class="offer-block__input offer-block__input_hide">
+            <div class="offer-block__input offer-block__input_address display-none">
                 <label class="offer-block__label">Адрес доставки</label>
                 <input required type="text" class="offer-block__place">
             </div>
@@ -85,7 +85,51 @@
             </div>
         </form>
     </div>
-    <input form="offer" type="submit" value="Продолжить" class="offer-block__button">
+    <input form="offer" type="submit" value="Продолжить" class="offer-block__button offer-block__toggle">
+    <!----------------------------------------------------------------------------------------------------------------->
+    <div class="offer-block__wares">
+        <div class="offer-block__top-wrap">
+            <p class="offer-block__item-name cell-15">Вещь</p>
+            <p class="offer-block__item-name cell-45">Описание</p>
+            <p class="offer-block__item-name cell-25">Количество</p>
+            <p class="offer-block__item-name cell-10">Всего</p>
+        </div>
+        <div class="offer-block__ware-item">
+            <img src="images/banan-man-sweatshirt_corral.jpg" alt="" class="offer-block__ware-image float_left cell-15">
+            <div class="offer-block__ware-info cell-45">
+                <p class="offer-block__text">Женская футболка</p>
+                <p class="offer-block__text offer-block__text_gray">Футболка</p>
+                <p class="offer-block__text offer-block__text_gray">Размер М</p>
+                <p class="offer-block__text offer-block__text_gray">Корраловый</p>
+            </div>
+            <p class="offer-block__number cell-25">1</p>
+            <div class="offer-block__total cell-10">749 грн</div>
+        </div>
+        <div class="offer-block__ware-item">
+            <img src="images/banan-man-shorts_peach.jpg" alt="" class="offer-block__ware-image float_left cell-15">
+            <div class="offer-block__ware-info cell-45">
+                <p class="offer-block__text">Женская футболка</p>
+                <p class="offer-block__text offer-block__text_gray">Футболка</p>
+                <p class="offer-block__text offer-block__text_gray">Размер М</p>
+                <p class="offer-block__text offer-block__text_gray">Корраловый</p>
+            </div>
+            <p class="offer-block__number cell-25">1</p>
+            <div class="offer-block__total cell-10">749 грн</div>
+        </div>
+        <div class="cell">
+            <p class="cell__text cell__text_name">Доставка</p>
+            <div class="cell__user-info">
+                <p class="cell__text">Киев</p>
+                <p class="cell__text">Отделений Новой Почты №93</p>
+                <p class="cell__text">Спектор Леонид</p>
+                <p class="cell__text">093 880 80 91</p>
+            </div>
+            <p class="cell__text cell__text_side-text">Бесплатная доставка</p>
+        </div>
+        <div class="cell">
+            <p class="cell__text cell__text_name">Оплата</p>
+        </div>
+    </div>
 </div>
 <!-------------------------------------------registration block end---------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
