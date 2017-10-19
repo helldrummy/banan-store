@@ -1,7 +1,11 @@
 /*******************************************************/
 /****************************************general styles*/
-.offer {
+.user-cabinet {
 
+}
+
+.user-cabinet .display-inline-block {
+    display: inline-block !important;
 }
 
 .cell-10 {
@@ -19,7 +23,70 @@
 .cell-45 {
     width: 45%;
 }
+
 /****************************************general styles*/
+/*******************************************************/
+/********************************user info block styles*/
+.block-container {
+    display: none;
+    width: 80%;
+    text-align: left;
+}
+
+.block-container .block-container__item {
+    display: inline-block;
+    margin: 0 50px 50px 0;
+    width: 30%;
+    vertical-align: top;
+}
+
+.block-container .block-container__name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+}
+
+.block-container .block-container__wrap {
+    margin: 0 0 20px 0;
+}
+
+.block-container .block-container__text {
+    font-size: 14px;
+}
+
+.block-container .block-container__head {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.block-container .block-container__button {
+    display: inline-block;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 10px 35px;
+    margin: 0 0 35px 0;
+    cursor: pointer;
+    background-color: black;
+    color: #ffffff;
+}
+
+.block-container .block-container__checkbox-block {
+
+}
+
+.block-container .block-container__checkbox-block p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block-container .block-container__checkbox {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+/********************************user info block styles*/
 /*******************************************************/
 /*****************************registration block markup*/
 .offer-block {
@@ -29,7 +96,7 @@
 }
 
 .offer-block .offer-block__switch {
-    display: inline-block;
+    display: block;
     margin: 0 100px 0 0;
     padding: 25px 0 0 0;
 }
@@ -38,6 +105,7 @@
     font-size: 14px;
     color: #000000;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .offer-block .offer-block__switch-item_active {
@@ -51,51 +119,55 @@
 }
 
 /*************************************Input-block begin*/
-.offer-block .offer-block__input-block {
+.user-cabinet .offer-block__input-block {
     display: inline-block;
     width: 30%
 }
 
-.offer-block .offer-block__form {
+.user-cabinet .offer-block__input-block.offer-block__input-block_edit {
+    display: none;
+}
+
+.user-cabinet .offer-block__form {
     max-width: 400px;
     margin: 0 auto;
 }
 
-.offer-block .offer-block__input {
+.user-cabinet .offer-block__input {
     margin: 0 auto 30px;
 }
 
-.offer-block .offer-block__input_shipping {
+.user-cabinet .offer-block__input_shipping {
 
 }
 
-.offer-block .offer-block__input_address {
+.user-cabinet .offer-block__input_address {
 }
 
-.offer-block .offer-block__label {
+.user-cabinet .offer-block__label {
     font-size: 12px;
     font-weight: 600;
     margin: 0 0 15px 0;
 }
 
-.offer-block .offer-block__label_checkbox {
+.user-cabinet .offer-block__label_checkbox {
     display: inline-block;
 }
 
-.offer-block .offer-block__place {
+.user-cabinet .offer-block__place {
     width: 100%;
     margin: 7px 0 0 0;
     border: 1px solid #000000;
 }
 
-.offer-block .offer-block__place_checkbox {
+.user-cabinet .offer-block__place_checkbox {
     width: 15px;
     height: 15px;
     border: 2px solid #000;
     display: inline-block;
 }
 
-.offer-block .offer-block__button {
+.user-cabinet .offer-block__button {
     display: block;
     background: #000000;
     color: #ffffff;
@@ -168,6 +240,14 @@
     min-height: 105px;
 }
 
+.cell.cell_xl {
+    min-height: 160px;
+}
+
+.cell .cell__text-wrapper {
+    margin: 0 0 20px 0;
+}
+
 .cell .cell__text {
     font-size: 14px;
     font-weight: 600;
@@ -207,30 +287,47 @@
 
 }
 
-.cell .cell__buttons-wrap{
+.cell .cell__buttons-wrap {
     position: absolute;
     width: 99%;
-    top: 65px;
-    text-align: right;
+    top: 115px;
+    text-align: left;
 }
 
 .cell .cell-button {
     display: inline-block;
     border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 10px 35px;
     cursor: pointer;
 }
 
-.cell .cell-button.cell-button_black {
-    background-color: #000000;
-    color: #ffffff;
-}
 /****************************************Cell-block end*/
 /*******************************************************/
 /*****************************registration block markup*/
 /*******************************************************/
-/*****************************************mobile styles*/
+/*****************************************pop-up styles*/
+.user-cabinet .pop-up {
+    max-width: 25%;
+    text-align: center;
+    font-size: 0;
+}
 
+.pop-up .pop-up__text {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.pop-up .pop-up__button-wrap {
+    width: 100%;
+}
+
+.pop-up .pop-up__button {
+    width: 32%;
+}
+
+/*****************************************pop-up styles*/
 /*******************************************************/
-/*****************************************mobile styles*/

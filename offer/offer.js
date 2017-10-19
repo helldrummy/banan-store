@@ -18,3 +18,12 @@ function checkboxActivation(checkboxElement, checkboxActiveClass) {
 }
 
 checkboxActivation('.offer-block__place_checkbox', 'active');
+
+function blockSwitch() {
+    $('offer-block__button').on('click', function () {
+        event.preventDefault();
+        event.stopPropagation();
+        $('.offer-block__toggle').hide();
+        $('.offer-block__wares').show();
+    })
+}

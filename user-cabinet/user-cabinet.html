@@ -5,11 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Offer page</title>
-    <link rel="stylesheet" href="offer.css">
+    <title>User cabinet</title>
+    <link rel="stylesheet" href="../offer/offer.css">
+    <link rel="stylesheet" href="user-cabinet.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
-<body class="body offer">
+<body class="body user-cabinet">
 <!--------------------------------------------------------------------------------------------------------------------->
 <!-----------------------------------------------header begin---------------------------------------------------------->
 <div class="header">
@@ -48,44 +49,47 @@
 <!-----------------------------------------registration block begin---------------------------------------------------->
 <div class="offer-block wrapper">
     <div class="offer-block__switch float_left">
-        <p class="offer-block__switch-item offer-block__switch-item_active">Адрес доставки</p>
-        <p class="offer-block__switch-item">Способ оплаты</p>
+        <p class="offer-block__switch-item offer-block__switch-item_active">Информация</p>
+        <p class="offer-block__switch-item">Мои заказы</p>
     </div>
-
-    <div class="offer-block__input-block">
-        <form id="offer" class="offer-block__form offer-block__toggle" action="">
-            <div class="offer-block__input">
-                <label class="offer-block__label">E-mail</label>
-                <input name="email" required type="email" class="offer-block__place">
+    <div class="block-container display-inline-block">
+        <div class="block-container__item">
+            <p class="block-container__name">Общая информация</p>
+            <div class="block-container__wrap">
+                <p class="block-container__head">e-mail</p>
+                <p class="block-container__text">tophot@mail.com</p>
             </div>
-            <p class="offer-block__header">Адрес Доставки</p>
-            <div class="offer-block__input">
-                <label class="offer-block__label">Имя Фамилия</label>
-                <input name="username" required type="text" class="offer-block__place">
+            <div class="block-container__wrap">
+                <p class="block-container__head">Пароль</p>
+                <p class="block-container__text">*************</p>
             </div>
-            <div class="offer-block__input">
-                <label class="offer-block__label">Город</label>
-                <input name="city" required type="text" class="offer-block__place">
+            <p class="block-container__button" data-edit="info-edit">Редактировать</p>
+            <div class="block-container__checkbox-block">
+                <p class="block-container__checkbox"></p>
+                <p class="block-container__text">Подписаться на рассылку</p>
             </div>
-            <div class="offer-block__input offer-block__input_shipping">
-                <label class="offer-block__label">Номер отделения Новой Почты</label>
-                <input name="mail" required type="text" class="offer-block__place">
+        </div>
+        <div class="block-container__item">
+            <p class="block-container__name">Контактные данные</p>
+            <div class="block-container__wrap">
+                <p class="block-container__head">Имя</p>
+                <p class="block-container__text">Леонид Спектор</p>
             </div>
-            <div class="offer-block__input offer-block__input_address display-none">
-                <label class="offer-block__label">Адрес доставки</label>
-                <input name="adress" type="text" class="offer-block__place">
+            <div class="block-container__wrap">
+                <p class="block-container__head">Город</p>
+                <p class="block-container__text">Киев</p>
             </div>
-            <div class="offer-block__input">
-                <label class="offer-block__label">Телефон</label>
-                <input name="number" required type="text" class="offer-block__place">
+            <div class="block-container__wrap">
+                <p class="block-container__head">Отеделение Новой Почты</p>
+                <p class="block-container__text">№93</p>
             </div>
-            <div class="offer-block__input">
-                <input name="shipping-checkbox" type="checkbox" class="offer-block__place offer-block__place_checkbox">
-                <label class="offer-block__label offer-block__label_checkbox">Я хочу доставку на дом (+20 грн)</label>
+            <div class="block-container__wrap">
+                <p class="block-container__head">Контактный номер</p>
+                <p class="block-container__text">+38(093)8808091</p>
             </div>
-        </form>
+            <p class="block-container__button" data-edit="contacts-edit">Редактировать</p>
+        </div>
     </div>
-    <p class="offer-block__button offer-block__toggle">Продолжить</p>
     <!----------------------------------------------------------------------------------------------------------------->
     <div class="offer-block__wares">
         <div class="offer-block__top-wrap">
@@ -95,7 +99,8 @@
             <p class="offer-block__item-name cell-10">Всего</p>
         </div>
         <div class="offer-block__ware-item">
-            <img src="images/banan-man-sweatshirt_corral.jpg" alt="" class="offer-block__ware-image float_left cell-15">
+            <img src="../offer/images/banan-man-sweatshirt_corral.jpg" alt=""
+                 class="offer-block__ware-image float_left cell-15">
             <div class="offer-block__ware-info cell-45">
                 <p class="offer-block__text">Женская футболка</p>
                 <p class="offer-block__text offer-block__text_gray">Футболка</p>
@@ -106,7 +111,8 @@
             <div class="offer-block__total cell-10">749 грн</div>
         </div>
         <div class="offer-block__ware-item">
-            <img src="images/banan-man-shorts_peach.jpg" alt="" class="offer-block__ware-image float_left cell-15">
+            <img src="../offer/images/banan-man-shorts_peach.jpg" alt=""
+                 class="offer-block__ware-image float_left cell-15">
             <div class="offer-block__ware-info cell-45">
                 <p class="offer-block__text">Женская футболка</p>
                 <p class="offer-block__text offer-block__text_gray">Футболка</p>
@@ -116,28 +122,7 @@
             <p class="offer-block__number cell-25">1</p>
             <div class="offer-block__total cell-10">749 грн</div>
         </div>
-        <div class="offer-block__ware-item">
-            <img src="images/banan-man-shorts_peach.jpg" alt="" class="offer-block__ware-image float_left cell-15">
-            <div class="offer-block__ware-info cell-45">
-                <p class="offer-block__text">Женская футболка</p>
-                <p class="offer-block__text offer-block__text_gray">Футболка</p>
-                <p class="offer-block__text offer-block__text_gray">Размер М</p>
-                <p class="offer-block__text offer-block__text_gray">Корраловый</p>
-            </div>
-            <p class="offer-block__number cell-25">1</p>
-            <div class="offer-block__total cell-10">749 грн</div>
-        </div>
-        <div class="offer-block__ware-item">
-            <img src="images/banan-man-shorts_peach.jpg" alt="" class="offer-block__ware-image float_left cell-15">
-            <div class="offer-block__ware-info cell-45">
-                <p class="offer-block__text">Женская футболка</p>
-                <p class="offer-block__text offer-block__text_gray">Футболка</p>
-                <p class="offer-block__text offer-block__text_gray">Размер М</p>
-                <p class="offer-block__text offer-block__text_gray">Корраловый</p>
-            </div>
-            <p class="offer-block__number cell-25">1</p>
-            <div class="offer-block__total cell-10">749 грн</div>
-        </div>
+
         <div class="cell">
             <p class="cell__text cell__text_name">Доставка</p>
             <div class="cell__user-info">
@@ -157,19 +142,76 @@
             <p class="cell__text cell__text_side-text">Сумма без скидки: 1098 грн</p>
             <p class="cell__text cell__text_add-text">Скидка: 5%</p>
         </div>
-        <div class="cell">
-            <p class="cell__text cell__text_side-text">Сумма к оплате: 1043,1 грн</p>
+        <div class="cell cell_xl">
+            <div class="cell__text-wrapper">
+                <p class="cell__text">Статус заказа: готовится к отправке</p>
+                <p class="cell__text">Ориентировочная дата доставки: 01.08.2017</p>
+            </div>
+            <p class="cell__text">Номер накладной Новой Почты: 20400056538406</p>
             <div class="cell__buttons-wrap">
-                <p class="cell-button">Назад</p>
-                <p class="cell-button cell-button_black">Оформить заказ</p>
+                <p class="cell-button">Отменить заказ</p>
             </div>
         </div>
     </div>
 </div>
 <!-------------------------------------------registration block end---------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------edit block begin-------------------------------------------------------->
+<div class="offer-block__input-block offer-block__input-block_edit contacts-edit">
+    <form id="info-change" class="offer-block__form offer-block__toggle" action="">
+        <p class="offer-block__header">Контактные данные</p>
+        <div class="offer-block__input">
+            <label class="offer-block__label">Имя Фамилия</label>
+            <input name="username-edit" required type="text" class="offer-block__place">
+        </div>
+        <div class="offer-block__input">
+            <label class="offer-block__label">Город</label>
+            <input name="city-edit" required type="text" class="offer-block__place">
+        </div>
+        <div class="offer-block__input offer-block__input_shipping">
+            <label class="offer-block__label">Номер отделения Новой Почты</label>
+            <input name="mail-edit" required type="text" class="offer-block__place">
+        </div>
+        <div class="offer-block__input offer-block__input_address display-none">
+            <label class="offer-block__label">Адрес доставки</label>
+            <input name="adress-edit" type="text" class="offer-block__place">
+        </div>
+        <div class="offer-block__input">
+            <label class="offer-block__label">Телефон</label>
+            <input name="number-edit" required type="text" class="offer-block__place">
+        </div>
+    </form>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------->
+<div class="offer-block__input-block offer-block__input-block_edit info-edit">
+    <form id="contacts-change" class="offer-block__form offer-block__toggle" action="">
+        <p class="offer-block__header">Общая информация</p>
+        <div class="offer-block__input">
+            <label class="offer-block__label">e-mail</label>
+            <input name="email-edit" required type="text" class="offer-block__place">
+        </div>
+        <div class="offer-block__input">
+            <label class="offer-block__label">Пароль</label>
+            <input name="password-edit" required type="text" class="offer-block__place">
+        </div>
+    </form>
+</div>
+<!-----------------------------------------------edit block end-------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------pop-up begin--------------------------------------------------------->
+<div class="fade">
+    <div class="pop-up vertical-center">
+        <div class="pop-up__text">Отменить заказ?</div>
+        <div class="pop-up__button-wrap">
+            <p class="pop-up__button button button_white">нет</p>
+            <p class="pop-up__button button">Отменить</p>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------------pop-up end---------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------->
 <script src="../js/jquery-3.1.1.js"></script>
-<script src="offer.js"></script>
+<script src="user-cabinet.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

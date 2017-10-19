@@ -59,8 +59,38 @@
 }
 
 /*************************************main block markup*/
+/***********************************mobile block markup*/
+.head-block .head-block__filter-block {
+    display: none;
+}
+
+.head-block .head-block__filter-activator {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 0;
+    margin: 30px auto 0;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+/***********************************mobile block markup*/
 /*******************************************************/
 /*****************************************mobile styles*/
+@media (max-width: 670px) {
+    .man-clothing .ware-block,
+    .woman-clothing .ware-block {
+        padding: 40px 0px;
+    }
 
+    .man-clothing .head-block__button_man:after,
+    .woman-clothing .head-block__button_woman:after {
+        margin-top: 5px;
+    }
+
+    .head-block .head-block__filter-block {
+        display: block;
+    }
+}
 /*******************************************************/
 /*****************************************mobile styles*/

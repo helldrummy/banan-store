@@ -49,18 +49,75 @@ a, a:hover, a:visited {
     text-decoration: none;
 }
 
-.vertical-center {
-    transform: translateY(-50%);
-    top: 50%;
-    position: relative;
-}
-
 .float_left {
     float: left;
 }
 
 .transition {
     transition: 1.5s;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.button {
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+.button_white {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.fade {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pop-up {
+    display: none;
+    font-family: Tahoma;
+    background-color: #ffffff;
+    padding: 35px 75px;
+    max-width: 750px;
+    max-height: 500px;
+    margin: auto;
+    position: relative;
+    border: 1px solid #000000;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    background-clip: padding-box;
+    outline: 0;
 }
 
 /*Font Bebas*/
@@ -122,8 +179,10 @@ a, a:hover, a:visited {
 .header {
     font-family: Bebas;
     background-color: #000000;
+    text-align: center;
     width: 100%;
-    padding: 5px 0px;
+    padding: 5px 0;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -175,7 +234,9 @@ a, a:hover, a:visited {
 .contacts .head-block,
 .payment-shipping .head-block,
 .support .head-block,
-.offer .head-block {
+.offer .head-block,
+.user-cabinet .head-block,
+.cart-page .head-block {
     margin: 0 0 100px 0;
 }
 
@@ -375,5 +436,39 @@ a, a:hover, a:visited {
     }
 }
 
+@media (max-width: 960px) {
+    .header .header__item {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: 670px) {
+    .header .header__item:after,
+    .head-block .head-block__sub-sections,
+    .head-block .head-block__links,
+    .header__item.header__item_first,
+    .header__item.header__item_third{
+        display: none;
+    }
+
+    .header .header__item {
+       width: 100%;
+    }
+
+    .head-block .head-block__category {
+        padding: 20px 0 0 0;
+    }
+
+    .head-block .head-block__logo {
+        margin: 0 auto 20px;
+        max-width: 100px;
+    }
+
+    .head-block .head-block__button {
+        font-size: 40px;
+    }
+
+}
 /*****************************************Media queries*/
 /**********************************************************************************************************************/
