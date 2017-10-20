@@ -15,9 +15,9 @@
 <!--------------------------------------------------------------------------------------------------------------------->
 <!-----------------------------------------------header begin---------------------------------------------------------->
 <div class="header">
-    <a href="#" class="header__item header__item_first">Бесплатная доставка по Украине 1-2 дня</a><!--
-    --><a href="#" class="header__item header__item_second">Бесплатный возврат или обмен 30 дней</a><!--
-    --><a href="#" class="header__item header__item_third">Скидка 5% при оплате картой</a>
+    <div class="header__item header__item_first"> <a href="#" >Бесплатная доставка по Украине 1-2 дня</a></div>
+    <div class="header__item header__item_first"><a href="#" >Бесплатный возврат или обмен 30 дней</a></div>
+    <div class="header__item header__item_first"> <a href="#">Скидка 5% при оплате картой</a></div>
 </div>
 <!------------------------------------------------header end----------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
@@ -33,17 +33,8 @@
             <img src="../images/banan-logo_black.png" alt="banan store logotype" class="head-block__logo-img">
         </a>
         <div class="head-block__main-sections">
-            <a href="../woman-clothing/woman-clothing.html" class="head-block__button head-block__button_woman category-button">Женское</a>
-            <a href="../man-clothing/man-clothing.html"
-               class="head-block__button head-block__button_man category-button">Мужское</a>
-        </div>
-        <div class="head-block__sub-sections">
-            <p class="head-block__filter-button">Все вещи</p>
-            <p class="head-block__filter-button">Футболки</p>
-            <p class="head-block__filter-button">Худи</p>
-            <p class="head-block__filter-button">Свитшоты</p>
-            <p class="head-block__filter-button">Штаны</p>
-            <p class="head-block__filter-button">Бомберы</p>
+            <a href="../man-clothing/man-clothing.html" class="head-block__button head-block__button_woman category-button">Женское</a>
+            <a href="#" class="head-block__button head-block__button_man category-button">Мужское</a>
         </div>
     </div>
     <div class="head-block__user">
@@ -51,6 +42,12 @@
         <p class="head-block__cart-counter">: 1</p>
         <a href="#" class="head-block__user-item head-block__user-item_registered-user">Личный кабинет</a>
         <a href="#" class="head-block__user-item">Вход</a>
+        <a target="_blank" href="../registration-page/registration.html">
+            <div class="head-block__icon head-block__icon_user"></div>
+        </a>
+        <a target="_blank"  href="../cart-page/cart-page.html">
+            <div class="head-block__icon head-block__icon_cart"></div>
+        </a>
     </div>
 </div>
 <!-------------------------------------------------head end------------------------------------------------------------>
@@ -59,14 +56,23 @@
 <div class="ware-block">
     <!--Images container-->
     <div class="ware-block__image-container">
-        <img src="images/photo1_banan-woman-top_beige.JPG" alt="" class="ware-block__image"><!--
-        --><img src="images/photo2_banan-woman-top_beige.JPG" alt="" class="ware-block__image"><!--
-        --><img src="images/photo3_banan-woman-top_beige.JPG" alt="" class="ware-block__image"><!--
-        --><img src="images/photo4_banan-woman-top_beige.JPG" alt="" class="ware-block__image"><!--
-        --><img src="../woman-clothing/images/banan-woman-top_beige.jpg" alt="" class="ware-block__image">
+        <div class="ware-block__image-block">
+            <img src="images/photo1_banan-woman-top_beige.JPG" alt="" class="ware-block__image">
+        </div>
+        <div class="ware-block__image-block">
+            <img src="images/photo2_banan-woman-top_beige.JPG" alt="" class="ware-block__image">
+        </div>
+        <div class="ware-block__image-block">
+            <img src="images/photo3_banan-woman-top_beige.JPG" alt="" class="ware-block__image">
+        </div>
+        <div class="ware-block__image-block">
+            <img src="images/photo4_banan-woman-top_beige.JPG" alt="" class="ware-block__image">
+        </div>
+        <div class="ware-block__image-block">
+            <img src="../man-clothing/images/banan-man-shorts_peach.jpg" alt="" class="ware-block__image">
+        </div>
     </div>
     <!--Images container-->
-
     <!--Info markup-->
     <div class="ware-block__info-container">
         <div class="ware-block__info-block">
@@ -85,13 +91,11 @@
                 </div>
                 <p class="ware-block__button">Добавить в корзину</p>
             </div>
-            <!------------------------------------------------------------------------------------------------------------->
+            <!---------------------------------w------------------------------------------------------------------------>
             <div class="ware-block__description">
-
                 <!--Size popup activator-->
                 <p class="ware-block__size-popup">Размерная сетка</p>
                 <!--Size popup activator-->
-
                 <p class="ware-block__description-text">
                     Лёгкий женский топ из хлопка и эластана <br>
                     подойдёт для летних прогулок и активных <br>
@@ -141,6 +145,7 @@
         crossorigin="anonymous">
 </script>
 <script src="../js/slick.js"></script>
+<script src="item-page.js"></script>
 <script src="../js/main.js"></script>
 <!--------------------------------------------------------------------------------------------------------------------->
 </body>

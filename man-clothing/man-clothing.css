@@ -14,6 +14,16 @@
     margin-top: 3px;
 }
 
+.man-clothing .fade .pop-up {
+    text-align: center;
+}
+
+.man-clothing .fade .button {
+    padding: 10px 110px;
+    margin: 50px 0 0 0;
+    max-width: 300px;
+}
+
 /****************************************general styles*/
 /*******************************************************/
 /*************************************main block markup*/
@@ -23,7 +33,7 @@
     margin: 0 auto 100px;
     max-width: 1360px;
     width: 100%;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .item-block {
@@ -59,30 +69,9 @@
 }
 
 /*************************************main block markup*/
-/***********************************mobile block markup*/
-.head-block .head-block__filter-block {
-    display: none;
-}
-
-.head-block .head-block__filter-activator {
-    width: 100%;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 15px 0;
-    margin: 30px auto 0;
-    letter-spacing: 0.5px;
-    display: block;
-}
-
-/***********************************mobile block markup*/
 /*******************************************************/
 /*****************************************mobile styles*/
 @media (max-width: 670px) {
-    .man-clothing .ware-block,
-    .woman-clothing .ware-block {
-        padding: 40px 0px;
-    }
-
     .man-clothing .head-block__button_man:after,
     .woman-clothing .head-block__button_woman:after {
         margin-top: 5px;
@@ -90,6 +79,21 @@
 
     .head-block .head-block__filter-block {
         display: block;
+    }
+
+    .item-block .item-block__text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .item-block {
+        max-width: 40%;
+        margin: 10px;
+    }
+
+    .man-clothing .ware-block, .woman-clothing .ware-block {
+        padding: 5px 0;
+        margin: 0 auto 50px;
     }
 }
 /*******************************************************/

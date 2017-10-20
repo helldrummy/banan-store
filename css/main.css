@@ -105,7 +105,7 @@ a, a:hover, a:visited {
 }
 
 .pop-up {
-    display: none;
+    display: block;
     font-family: Tahoma;
     background-color: #ffffff;
     padding: 35px 75px;
@@ -344,6 +344,38 @@ a, a:hover, a:visited {
     display: none;
 }
 
+/*Mobile elements*/
+.head-block .head-block__icon {
+    width: 31px;
+    height: 40px;
+    margin: 0 10px;
+    display: none;
+}
+
+.head-block .head-block__icon.head-block__icon_user {
+    background: url("../images/account.png") no-repeat center center;
+    background-size: cover;
+}
+
+.head-block .head-block__icon.head-block__icon_cart {
+    background: url("../images/cart.png") no-repeat center center;
+    background-size: cover;
+}
+
+.head-block .head-block__filter-block {
+    display: none;
+}
+
+.head-block .head-block__filter-activator {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 0;
+    margin: 30px auto 0;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
 /*************************************head block markup*/
 /*******************************************************/
 /*****************************************Footer styles*/
@@ -444,16 +476,36 @@ a, a:hover, a:visited {
 }
 
 @media (max-width: 670px) {
+    /******************************************************************************************************************/
     .header .header__item:after,
     .head-block .head-block__sub-sections,
     .head-block .head-block__links,
-    .header__item.header__item_first,
-    .header__item.header__item_third{
+    .head-block__user-item,
+    .head-block__cart-counter,
+    .footer {
         display: none;
     }
 
+    /******************************************************************************************************************/
+    /*mobile styles for main block begin*/
+    .main-block .main-block__buttons-block {
+        max-width: 600px;
+        position: absolute;
+        top: 43%;
+        left: 10%;
+    }
+
+    .main-block .main-block__logo {
+        display: block;
+        margin: 0 0 40px;
+    }
+
+    /*mobile styles for head block end*/
+    /******************************************************************************************************************/
+    /*mobile styles for head block begin*/
     .header .header__item {
-       width: 100%;
+        font-size: 12px;
+        letter-spacing: 0;
     }
 
     .head-block .head-block__category {
@@ -469,6 +521,25 @@ a, a:hover, a:visited {
         font-size: 40px;
     }
 
+    .head-block .head-block__icon {
+        display: inline-block;
+    }
+
+    .head-block .head-block__user {
+        top: 45px;
+        right: 10px;
+    }
+
+    /*mobile styles for head block end*/
+    /******************************************************************************************************************/
 }
+
+@media (max-width: 360px) {
+    .head-block .head-block__icon {
+        width: 23px;
+        height: 30px;
+    }
+}
+
 /*****************************************Media queries*/
 /**********************************************************************************************************************/

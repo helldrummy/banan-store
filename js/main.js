@@ -1,4 +1,25 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Slick initialization
+$(document).ready(function(){
+    $('.header').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 670,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000
+                }
+            }
+        ]
+    });
+});
 //YouTube background video script
 var Page = {
     checkMobile: function () {

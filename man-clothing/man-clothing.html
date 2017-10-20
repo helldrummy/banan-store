@@ -15,9 +15,9 @@
 <!--------------------------------------------------------------------------------------------------------------------->
 <!-----------------------------------------------header begin---------------------------------------------------------->
 <div class="header">
-    <a href="#" class="header__item header__item_first">Бесплатная доставка по Украине 1-2 дня</a><!--
-    --><a href="#" class="header__item header__item_second">Бесплатный возврат или обмен 30 дней</a><!--
-    --><a href="#" class="header__item header__item_third">Скидка 5% при оплате картой</a>
+    <div class="header__item header__item_first"> <a href="#" >Бесплатная доставка по Украине 1-2 дня</a></div>
+    <div class="header__item header__item_first"><a href="#" >Бесплатный возврат или обмен 30 дней</a></div>
+    <div class="header__item header__item_first"> <a href="#">Скидка 5% при оплате картой</a></div>
 </div>
 <!------------------------------------------------header end----------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
@@ -33,11 +33,10 @@
             <img src="../images/banan-logo_black.png" alt="banan store logotype" class="head-block__logo-img">
         </a>
         <div class="head-block__main-sections">
-            <a href="../woman-clothing/woman-clothing.html" class="head-block__button head-block__button_woman category-button">Женское</a>
+            <a href="../man-clothing/man-clothing.html" class="head-block__button head-block__button_woman category-button">Женское</a>
             <a href="#" class="head-block__button head-block__button_man category-button">Мужское</a>
             <div class="head-block__filter-block">
                 <p class="head-block__filter-activator">Добавить фильтры</p>
-
             </div>
         </div>
         <div class="head-block__sub-sections">
@@ -54,6 +53,12 @@
         <p class="head-block__cart-counter">: 1</p>
         <a href="#" class="head-block__user-item head-block__user-item_registered-user">Личный кабинет</a>
         <a href="#" class="head-block__user-item">Вход</a>
+        <a target="_blank" href="../registration-page/registration.html">
+            <div class="head-block__icon head-block__icon_user"></div>
+        </a>
+        <a target="_blank"  href="../cart-page/cart-page.html">
+            <div class="head-block__icon head-block__icon_cart"></div>
+        </a>
     </div>
 </div>
 <!-------------------------------------------------head end------------------------------------------------------------>
@@ -203,6 +208,32 @@
 </div>
 <!---------------------------------------------main section end-------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------pop-up begin---------------------------------------------------------->
+<div class="fade">
+    <div class="pop-up vertical-center" id="costumer-popup">
+        <p class="pop-up__text">
+            Dear costumers! <br>
+            <br>
+            At present time we only have domestic shipping within Ukraine. <br>
+            We don’t offer worldwide shipping due to our shipping policy: our intention is to provide best service as possible,
+            so we offer free 1-day delivery everywhere we operate. Unless we operate directly in your country we can’t provide
+            such fast and cheap delivery. Please, stay tuned for updates, we will soon be in your country.
+            Thank you for your attention.
+            <br>
+            <br>
+            Banan
+        </p>
+        <div class="button">Continue</div>
+    </div>
+    <div class="pop-up vertical-center" id="cart-popup">
+        <p class="pop-up__text">
+            Ваша корзина пуста
+        </p>
+        <div class="button">Закрыть</div>
+    </div>
+</div>
+<!------------------------------------------------pop-up end----------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------->
 <!-----------------------------------------------footer begin---------------------------------------------------------->
 <div class="footer">
     <div class="footer__container">
@@ -216,6 +247,7 @@
 <!--------------------------------------------------------------------------------------------------------------------->
 <script src="../js/jquery-3.1.1.js"></script>
 <script src="../js/slick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
