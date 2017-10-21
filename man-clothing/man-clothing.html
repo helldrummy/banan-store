@@ -5,6 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/32x32.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="56x56" href="../images/56x56.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/57x57.png">
     <title>Man clothing</title>
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/slick-theme.css">
@@ -15,14 +19,28 @@
 <!--------------------------------------------------------------------------------------------------------------------->
 <!-----------------------------------------------header begin---------------------------------------------------------->
 <div class="header">
-    <div class="header__item header__item_first"> <a href="#" >Бесплатная доставка по Украине 1-2 дня</a></div>
-    <div class="header__item header__item_first"><a href="#" >Бесплатный возврат или обмен 30 дней</a></div>
-    <div class="header__item header__item_first"> <a href="#">Скидка 5% при оплате картой</a></div>
+    <div class="header__item header__item_first"><a href="#">Бесплатная доставка по Украине 1-2 дня</a></div>
+    <div class="header__item header__item_first"><a href="#">Бесплатный возврат или обмен 30 дней</a></div>
+    <div class="header__item header__item_first"><a href="#">Скидка 5% при оплате картой</a></div>
 </div>
 <!------------------------------------------------header end----------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------head begin----------------------------------------------------------->
 <div class="head-block">
+    <div class="menu-collapsed">
+        <div class="bar"></div>
+        <div class="menu__close-btn"></div>
+        <div class="menu__block">
+            <div class="menu__item"><a href="callto:+380937604251">093 760 42 51</a></div>
+            <div class="menu__item"><a href="../support/support.html">Поддержка/FAQ</a></div>
+            <div class="menu__item"><a href="../payment-shipping/payment-shipping.html">Оплата и доставка</a></div>
+            <div class="menu__item"><a href="../about/about.html">О нас</a></div>
+            <div class="menu__item"><a href="../contacts/contacts.html">Контакты</a></div>
+            <div class="menu__item"><a target="_blank" href="https://www.instagram.com/bananclothing/">Instagram</a>
+            </div>
+            <div class="menu__item"><a target="_blank" href="https://www.facebook.com/bananclothing/">Facebook</a></div>
+        </div>
+    </div>
     <div class="head-block__links">
         <p class="head-block__link-item">093 760 42 51</p>
         <a href="#" class="head-block__link-item">Поддержка/FAQ</a>
@@ -33,10 +51,22 @@
             <img src="../images/banan-logo_black.png" alt="banan store logotype" class="head-block__logo-img">
         </a>
         <div class="head-block__main-sections">
-            <a href="../man-clothing/man-clothing.html" class="head-block__button head-block__button_woman category-button">Женское</a>
+            <a href="../man-clothing/man-clothing.html"
+               class="head-block__button head-block__button_woman category-button">Женское</a>
             <a href="#" class="head-block__button head-block__button_man category-button">Мужское</a>
-            <div class="head-block__filter-block">
-                <p class="head-block__filter-activator">Добавить фильтры</p>
+            <div id="wrap">
+                <div id="dropdown" class="ddmenu">
+                    <p class="head-block__filter-activator">Фильтры</p>
+                    <ul>
+                        <li><p class="head-block__filter-button">Все вещи</p></li>
+                        <li><p class="head-block__filter-button">Футболки</p></li>
+                        <li><p class="head-block__filter-button">Худи</p></li>
+                        <li><p class="head-block__filter-button">Свитшоты</p></li>
+                        <li><p class="head-block__filter-button">Штаны</p></li>
+                        <li>
+                            <p class="head-block__filter-button">Бомберы</p></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="head-block__sub-sections">
@@ -56,7 +86,7 @@
         <a target="_blank" href="../registration-page/registration.html">
             <div class="head-block__icon head-block__icon_user"></div>
         </a>
-        <a target="_blank"  href="../cart-page/cart-page.html">
+        <a target="_blank" href="../cart-page/cart-page.html">
             <div class="head-block__icon head-block__icon_cart"></div>
         </a>
     </div>
@@ -215,8 +245,10 @@
             Dear costumers! <br>
             <br>
             At present time we only have domestic shipping within Ukraine. <br>
-            We don’t offer worldwide shipping due to our shipping policy: our intention is to provide best service as possible,
-            so we offer free 1-day delivery everywhere we operate. Unless we operate directly in your country we can’t provide
+            We don’t offer worldwide shipping due to our shipping policy: our intention is to provide best service as
+            possible,
+            so we offer free 1-day delivery everywhere we operate. Unless we operate directly in your country we can’t
+            provide
             such fast and cheap delivery. Please, stay tuned for updates, we will soon be in your country.
             Thank you for your attention.
             <br>

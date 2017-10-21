@@ -72,15 +72,6 @@
 /*******************************************************/
 /*****************************************mobile styles*/
 @media (max-width: 670px) {
-    .man-clothing .head-block__button_man:after,
-    .woman-clothing .head-block__button_woman:after {
-        margin-top: 5px;
-    }
-
-    .head-block .head-block__filter-block {
-        display: block;
-    }
-
     .item-block .item-block__text {
         padding: 0;
         text-align: center;

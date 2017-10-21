@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Slick initialization
-$(document).ready(function(){
+$(document).ready(function () {
     $('.header').slick({
         infinite: true,
         slidesToShow: 3,
@@ -19,6 +19,23 @@ $(document).ready(function(){
             }
         ]
     });
+
+    $(".bar").on('click',function() {
+        $(this).toggleClass("bar_active");
+        $('.menu-collapsed').toggleClass("menu-expanded");
+    });
+
+    $("#dropdown").on("click", function(e){
+        e.preventDefault();
+        if($(this).hasClass("open")) {
+            $(this).removeClass("open");
+            $(this).children("ul").slideUp("fast");
+        } else {
+            $(this).addClass("open");
+            $(this).children("ul").slideDown("fast");
+        }
+    });
+
 });
 //YouTube background video script
 var Page = {
@@ -130,7 +147,6 @@ Page.init();
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Add animation class on scroll
-
 var infoBlockOffsetTop = $('.ware-block__info-block').offset().top;
 
 function elementAnimation(elementClassName, animationClass, elementInitialTop) {
@@ -142,7 +158,7 @@ function elementAnimation(elementClassName, animationClass, elementInitialTop) {
         if (isHigher) {
             element.addClass(animationClass);
         }
-   } else if(element.offset().top < elementInitialTop) {
+    } else if (element.offset().top < elementInitialTop) {
         element.removeClass(animationClass);
     }
 }
@@ -150,9 +166,11 @@ function elementAnimation(elementClassName, animationClass, elementInitialTop) {
 //Add animation class on scroll
 
 //animation class on scroll initialization
-$(window).on('scroll', function () {
-    elementAnimation('.ware-block__info-block', 'absolute-top', infoBlockOffsetTop);
-});
+if ($(window).width() >= 768 || $(window).height() >= 570) {
+    $(window).on('scroll', function () {
+        elementAnimation('.ware-block__info-block', 'absolute-top', infoBlockOffsetTop);
+    });
+}
 //animation class on scroll initialization
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //popup script 
