@@ -14,14 +14,18 @@ function checkboxActivation(checkboxElement, checkboxActiveClass) {
 
 checkboxActivation('.offer-block__place_checkbox', 'active');
 
-function blockSwitch() {
+function blockSwitch(element1, element2, element3, toggledClass) {
         event.preventDefault();
         event.stopPropagation();
-        $('.offer-block__toggle').hide();
-        $('.offer-block__wares').css('display', 'inline-block');
-
+        $(element1).hide();
+        $(element2).css('display', 'inline-block');
+        $(element3).toggleClass(toggledClass)
 }
 
 $('.offer-block__button').on('click', function () {
-    blockSwitch();
+    blockSwitch('.offer-block__toggle', '.offer-block__wares', '.offer-block__switch-item', 'offer-block__switch-item_active');
+});
+
+$('.cell-button_back').on('click', function () {
+    blockSwitch('.offer-block__wares', '.offer-block__toggle', '.offer-block__switch-item', 'offer-block__switch-item_active');
 });

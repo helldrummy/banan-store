@@ -105,6 +105,14 @@ a, a:hover, a:visited {
     display: block;
 }
 
+.display-inline-block {
+    display: inline-block;
+}
+
+.bold {
+    font-weight: 600;
+}
+
 .vertical-center {
     position: relative;
     top: 50%;
@@ -430,7 +438,7 @@ a, a:hover, a:visited {
     cursor: pointer;
     margin: 30px auto 0;
     letter-spacing: 0.5px;
-    display: block;
+    display: none;
 }
 
 /* page container */
@@ -703,6 +711,17 @@ a, a:hover, a:visited {
         font-size: 14px;
         letter-spacing: 0.5px;
     }
+
+    .registration .head-block,
+    .password .head-block,
+    .contacts .head-block,
+    .payment-shipping .head-block,
+    .support .head-block,
+    .offer .head-block,
+    .user-cabinet .head-block,
+    .cart-page .head-block {
+        margin: 0 0 50px 0;
+    }
 }
 
 @media (max-width: 670px) {
@@ -781,6 +800,10 @@ a, a:hover, a:visited {
     }
 
     .menu-collapsed {
+        display: block;
+    }
+
+    .head-block .head-block__filter-activator {
         display: block;
     }
 

@@ -29,6 +29,10 @@
     text-align: left;
 }
 
+.offer-block.wrapper {
+    position: relative;
+}
+
 .offer-block .offer-block__switch {
     display: inline-block;
     margin: 0 100px 0 0;
@@ -64,6 +68,7 @@
 
 .offer-block .offer-block__input {
     margin: 0 auto 30px;
+    text-align: left;
 }
 
 .offer-block .offer-block__input_shipping {
@@ -79,9 +84,68 @@
     margin: 0 0 15px 0;
 }
 
+/*Checkbox styles begin*/
 .offer-block .offer-block__label_checkbox {
     display: inline-block;
 }
+
+input[type=checkbox] {
+    opacity: 0;
+    float: left;
+}
+
+input[type=checkbox] + label {
+    margin: 0 0 0 30px;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    float: left;
+    padding: 0 0 0 20px;
+}
+
+input[type=checkbox] + label ~ label {
+    margin: 0 0 0 40px;
+}
+
+input[type=checkbox] + label::before {
+    content: ' ';
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: white;
+    border: 1px solid #000000;
+}
+
+input[type=checkbox] + label::after {
+    content: ' ';
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    display: block;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE4MS4yIDI3MyAxNyAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxODEuMiAyNzMgMTcgMTYiPjxwYXRoIGQ9Ik0tMzA2LjMgNTEuMmwtMTEzLTExM2MtOC42LTguNi0yNC04LjYtMzQuMyAwbC01MDYuOSA1MDYuOS0yMTIuNC0yMTIuNGMtOC42LTguNi0yNC04LjYtMzQuMyAwbC0xMTMgMTEzYy04LjYgOC42LTguNiAyNCAwIDM0LjNsMjMxLjIgMjMxLjIgMTEzIDExM2M4LjYgOC42IDI0IDguNiAzNC4zIDBsMTEzLTExMyA1MjQtNTI0YzctMTAuMyA3LTI1LjctMS42LTM2eiIvPjxwYXRoIGZpbGw9IiMzNzM3MzciIGQ9Ik0xOTcuNiAyNzcuMmwtMS42LTEuNmMtLjEtLjEtLjMtLjEtLjUgMGwtNy40IDcuNC0zLjEtMy4xYy0uMS0uMS0uMy0uMS0uNSAwbC0xLjYgMS42Yy0uMS4xLS4xLjMgMCAuNWwzLjMgMy4zIDEuNiAxLjZjLjEuMS4zLjEuNSAwbDEuNi0xLjYgNy42LTcuNmMuMy0uMS4zLS4zLjEtLjV6Ii8+PHBhdGggZD0iTTExODcuMSAxNDMuN2wtNTYuNS01Ni41Yy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTI1My41IDI1My41LTEwNi4yLTEwNi4yYy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTU2LjUgNTYuNWMtNS4xIDUuMS01LjEgMTIgMCAxNy4xbDExNC43IDExNC43IDU2LjUgNTYuNWM1LjEgNS4xIDEyIDUuMSAxNy4xIDBsNTYuNS01Ni41IDI2Mi0yNjJjNS4yLTMuNCA1LjItMTIgLjEtMTcuMXpNMTYzNC4xIDE2OS40bC0zNy43LTM3LjdjLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0xNjkuNSAxNjkuNS03MC4yLTcxLjljLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0zNy43IDM3LjdjLTMuNCAzLjQtMy40IDguNiAwIDEybDc3LjEgNzcuMSAzNy43IDM3LjdjMy40IDMuNCA4LjYgMy40IDEyIDBsMzcuNy0zNy43IDE3NC43LTE3Ni40YzEuNi0xLjcgMS42LTYuOS0uMS0xMC4zeiIvPjwvc3ZnPg==') no-repeat center center;
+    -ms-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    transition: all .3s ease;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+input[type=checkbox]:checked + label::after {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*Checkbox styles end*/
 
 .offer-block .offer-block__place {
     width: 100%;
@@ -104,7 +168,7 @@
     margin: 0 0 18px 0;
     border-style: none;
     position: absolute;
-    bottom: -100px;
+    bottom: -60px;
     right: 60px;
     cursor: pointer;
 }
@@ -233,60 +297,137 @@
 /*****************************registration block markup*/
 /*******************************************************/
 /*****************************************mobile styles*/
-input[type=checkbox] {
-    opacity: 0;
-    float: left;
+@media (max-width: 1115px) {
+    .offer-block .offer-block__wares {
+        width: 70%;
+    }
+
+    .offer-block .offer-block__total {
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
 
-input[type=checkbox] + label {
-    margin: 0 0 0 30px;
-    position: relative;
-    cursor: pointer;
-    font-size: 16px;
-    float: left;
-    padding: 0 0 0 20px;
+@media (max-width: 825px) {
+    .offer-block.wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cell .cell-button {
+        display: block;
+        margin: 10px auto;
+        max-width: 50%;
+    }
+
+    .offer-block .offer-block__switch {
+        display: block;
+        width: 100%;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    .offer-block .offer-block__switch-item {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .offer-block .offer-block__input-block {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .offer-block .offer-block__button {
+        display: block;
+        margin: 80px auto 30px;
+        max-width: 50%;
+        text-align: center;
+        position: initial;
+        width: 100%;
+    }
+
+    .offer-block .offer-block__wares {
+        width: 100%;
+        display: none;
+        padding: 0 10px;
+    }
+
+    .offer-block .offer-block__text {
+        text-transform: uppercase;
+    }
+
+    .cell .cell__text {
+        text-align: left;
+    }
+
+    .offer-block .offer-block__ware-info {
+        text-align: left;
+    }
+
+    .offer-block .offer-block__top-wrap {
+        text-align: left;
+    }
+
 }
 
-input[type=checkbox] + label ~ label {
-    margin: 0 0 0 40px;
+@media (max-width: 510px) {
+    .offer-block .offer-block__total {
+        font-size: 12px;
+    }
+
+    .cell .cell-button {
+        display: block;
+        margin: 10px auto;
+        max-width: 80%;
+    }
 }
 
-input[type=checkbox] + label::before {
-    content: ' ';
-    position: absolute;
-    left: -15px;
-    top: 0px;
-    width: 25px;
-    height: 25px;
-    display: block;
-    background: white;
-    border: 1px solid #000000;
+
+@media (max-width: 500px) {
+    .offer-block .offer-block__form {
+        max-width: 250px;
+    }
+
 }
 
-input[type=checkbox] + label::after {
-    content: ' ';
-    position: absolute;
-    left: -15px;
-    top: 0;
-    width: 23px;
-    height: 23px;
-    display: block;
-    z-index: 1;
-    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE4MS4yIDI3MyAxNyAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxODEuMiAyNzMgMTcgMTYiPjxwYXRoIGQ9Ik0tMzA2LjMgNTEuMmwtMTEzLTExM2MtOC42LTguNi0yNC04LjYtMzQuMyAwbC01MDYuOSA1MDYuOS0yMTIuNC0yMTIuNGMtOC42LTguNi0yNC04LjYtMzQuMyAwbC0xMTMgMTEzYy04LjYgOC42LTguNiAyNCAwIDM0LjNsMjMxLjIgMjMxLjIgMTEzIDExM2M4LjYgOC42IDI0IDguNiAzNC4zIDBsMTEzLTExMyA1MjQtNTI0YzctMTAuMyA3LTI1LjctMS42LTM2eiIvPjxwYXRoIGZpbGw9IiMzNzM3MzciIGQ9Ik0xOTcuNiAyNzcuMmwtMS42LTEuNmMtLjEtLjEtLjMtLjEtLjUgMGwtNy40IDcuNC0zLjEtMy4xYy0uMS0uMS0uMy0uMS0uNSAwbC0xLjYgMS42Yy0uMS4xLS4xLjMgMCAuNWwzLjMgMy4zIDEuNiAxLjZjLjEuMS4zLjEuNSAwbDEuNi0xLjYgNy42LTcuNmMuMy0uMS4zLS4zLjEtLjV6Ii8+PHBhdGggZD0iTTExODcuMSAxNDMuN2wtNTYuNS01Ni41Yy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTI1My41IDI1My41LTEwNi4yLTEwNi4yYy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTU2LjUgNTYuNWMtNS4xIDUuMS01LjEgMTIgMCAxNy4xbDExNC43IDExNC43IDU2LjUgNTYuNWM1LjEgNS4xIDEyIDUuMSAxNy4xIDBsNTYuNS01Ni41IDI2Mi0yNjJjNS4yLTMuNCA1LjItMTIgLjEtMTcuMXpNMTYzNC4xIDE2OS40bC0zNy43LTM3LjdjLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0xNjkuNSAxNjkuNS03MC4yLTcxLjljLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0zNy43IDM3LjdjLTMuNCAzLjQtMy40IDguNiAwIDEybDc3LjEgNzcuMSAzNy43IDM3LjdjMy40IDMuNCA4LjYgMy40IDEyIDBsMzcuNy0zNy43IDE3NC43LTE3Ni40YzEuNi0xLjcgMS42LTYuOS0uMS0xMC4zeiIvPjwvc3ZnPg==') no-repeat center center;
-    -ms-transition: all .2s ease;
-    -webkit-transition: all .2s ease;
-    transition: all .3s ease;
-    -ms-transform: scale(0);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
+@media (max-width: 440px) {
+   .offer-block .offer-block__button {
+        max-width: 70%;
+    }
+
+    .offer-block .offer-block__top-wrap {
+        font-size: 11px;
+    }
+
+    .offer-block .offer-block__ware-info {
+        font-size: 13px;
+    }
+
+    .offer-block .offer-block__ware-item {
+        min-height: 150px;
+        margin: 0;
+    }
+
+    .cell-25 {
+        width: 20%;
+    }
+
+    .cell-10 {
+        width: 15%;
+    }
+
+    .cell .cell__text {
+        font-size: 12px;
+    }
+
 }
 
-input[type=checkbox]:checked + label::after {
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
+@media (max-width: 360px) {
+    .offer-block .offer-block__ware-info {
+        font-size: 12px;
+    }
 }
 
 /*******************************************************/

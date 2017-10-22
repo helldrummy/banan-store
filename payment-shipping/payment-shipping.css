@@ -30,6 +30,27 @@
 /************************************about block markup*/
 /*******************************************************/
 /*****************************************mobile styles*/
+@media (max-width: 670px) {
+    .payment-shipping .info .info__header {
+       text-decoration: underline;
+        position: relative;
+        padding: 0 0 0 15px;
+    }
 
+    .payment-shipping .info .info__header:before {
+        content: url("../support/images/arrow.png");
+        position: absolute;
+        top: 3px;
+        left: -10px;
+    }
+
+    .payment-shipping .info .info__header {
+        font-size: 20px;
+    }
+
+    .payment-shipping .info .info__text {
+        font-size: 14px;
+    }
+}
 /*******************************************************/
 /*****************************************mobile styles*/

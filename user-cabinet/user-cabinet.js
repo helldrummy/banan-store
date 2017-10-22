@@ -10,11 +10,11 @@ $('.offer-block__switch-item').on('click', function () {
     blocksSwitch();
 });
 
-function showBlock() {
-
-}
-
 $(".block-container__button").on('click', function () {
     console.log('asd');
     $($(this).data('edit')).show();
+});
+
+$('.cell__button').on('click', function () {
+    $('.fade').show();
 });

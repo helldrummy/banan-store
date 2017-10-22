@@ -89,8 +89,8 @@
             </div>
             <p class="block-container__button" data-edit="info-edit">Редактировать</p>
             <div class="block-container__checkbox-block">
-                <p class="block-container__checkbox"></p>
-                <p class="block-container__text">Подписаться на рассылку</p>
+                <input class="offer-block__place offer-block__place_checkbox" id="checkbox" type="checkbox" name="shipping-checkbox">
+                <label class="offer-block__label offer-block__label_checkbox" for="checkbox">Подписаться на рассылку</label>
             </div>
         </div>
         <div class="block-container__item">
@@ -154,26 +154,22 @@
                 <p class="cell__text">Отделений Новой Почты №93</p>
                 <p class="cell__text">Спектор Леонид</p>
                 <p class="cell__text">093 880 80 91</p>
+                <p class="cell__text cell__text_margin">Оплата</p>
+                <p class="cell__text cell__text">Картой (скидка 5%)</p>
+                <p class="cell__text cell__text_bottom-text">Сумма без скидки: 1098 грн</p>
+                <p class="cell__text cell__text_bottom-add">Скидка: 5%</p>
             </div>
             <p class="cell__text cell__text_side-text">Бесплатная доставка</p>
         </div>
-        <div class="cell">
-            <p class="cell__text cell__text_name">Оплата</p>
-            <select class="cell__select" name="payment choose">
-                <option class="cell__select-item" selected value="card payment">Оплата картой (скидка 5%)</option>
-                <option class="cell__select-item" value="shipping payment">Оплата наложенным платежом</option>
-            </select>
-            <p class="cell__text cell__text_side-text">Сумма без скидки: 1098 грн</p>
-            <p class="cell__text cell__text_add-text">Скидка: 5%</p>
-        </div>
         <div class="cell cell_xl">
             <div class="cell__text-wrapper">
+                <p class="cell__text cell__text_side-text cell__text_total bold">Сума к оплате: 1043,1 грн</p>
                 <p class="cell__text">Статус заказа: готовится к отправке</p>
                 <p class="cell__text">Ориентировочная дата доставки: 01.08.2017</p>
             </div>
             <p class="cell__text">Номер накладной Новой Почты: 20400056538406</p>
             <div class="cell__buttons-wrap">
-                <p class="cell-button">Отменить заказ</p>
+                <p class="cell__button">Отменить заказ</p>
             </div>
         </div>
     </div>
@@ -227,7 +223,7 @@
     <div class="pop-up vertical-center">
         <div class="pop-up__text">Отменить заказ?</div>
         <div class="pop-up__button-wrap">
-            <p class="pop-up__button button button_white">нет</p>
+            <p class="pop-up__button button button_white pop-up__close">нет</p>
             <p class="pop-up__button button">Отменить</p>
         </div>
     </div>

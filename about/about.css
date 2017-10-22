@@ -35,6 +35,22 @@
 /************************************about block markup*/
 /*******************************************************/
 /*****************************************mobile styles*/
+@media (max-width: 670px){
+    .about .about__text-block {
+        width: 90%;
+    }
 
+    .about .about__text {
+        font-size: 14px;
+    }
+
+    .about .about__text-block {
+        margin: 0 0 50px 0;
+    }
+
+    .about .about__main-image {
+        margin: 0 0 20px 0;
+    }
+}
 /*******************************************************/
 /*****************************************mobile styles*/

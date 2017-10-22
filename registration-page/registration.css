@@ -22,6 +22,10 @@
     text-align: left;
 }
 
+.input-block.input-block_mobile {
+    display: none;
+}
+
 .password .input-block {
     width: 100%;
 }
@@ -43,6 +47,8 @@
 }
 
 .input-block .input-block__label {
+    width: 100%;
+    display: block;
     font-size: 12px;
     font-weight: 600;
     margin: 0 0 15px 0;
@@ -71,6 +77,34 @@
 /*****************************registration block markup*/
 /*******************************************************/
 /*****************************************mobile styles*/
+@media (max-width: 910px) {
+    .registration .input-block .input-block__form {
+        max-width: 300px;
+    }
+}
 
+@media (max-width: 700px) {
+    .registration .input-block .input-block__form {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 670px) {
+    .input-block {
+        display: none;
+    }
+
+    .input-block.input-block_mobile {
+        display: block;
+        width: 100%;
+        margin: 50px auto;
+        padding: 50px 0 0 0;
+    }
+
+    .input-block .input-block__header {
+        margin: 0 auto 30px;
+        font-size: 21px;
+    }
+}
 /*******************************************************/
 /*****************************************mobile styles*/

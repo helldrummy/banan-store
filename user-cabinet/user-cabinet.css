@@ -8,6 +8,10 @@
     display: inline-block !important;
 }
 
+.user-cabinet .pop-up .pop-up__button {
+    width: 50%;
+}
+
 .cell-10 {
     width: 10%;
 }
@@ -167,6 +171,66 @@
     display: inline-block;
 }
 
+/*Checkbox styles begin*/
+
+input[type=checkbox] {
+    opacity: 0;
+    float: left;
+}
+
+input[type=checkbox] + label {
+    margin: 0 0 0 30px;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    float: left;
+    padding: 0 0 0 20px;
+}
+
+input[type=checkbox] + label ~ label {
+    margin: 0 0 0 40px;
+}
+
+input[type=checkbox] + label::before {
+    content: ' ';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    border: 1px solid #000000;
+}
+
+input[type=checkbox] + label::after {
+    content: ' ';
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE4MS4yIDI3MyAxNyAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxODEuMiAyNzMgMTcgMTYiPjxwYXRoIGQ9Ik0tMzA2LjMgNTEuMmwtMTEzLTExM2MtOC42LTguNi0yNC04LjYtMzQuMyAwbC01MDYuOSA1MDYuOS0yMTIuNC0yMTIuNGMtOC42LTguNi0yNC04LjYtMzQuMyAwbC0xMTMgMTEzYy04LjYgOC42LTguNiAyNCAwIDM0LjNsMjMxLjIgMjMxLjIgMTEzIDExM2M4LjYgOC42IDI0IDguNiAzNC4zIDBsMTEzLTExMyA1MjQtNTI0YzctMTAuMyA3LTI1LjctMS42LTM2eiIvPjxwYXRoIGZpbGw9IiMzNzM3MzciIGQ9Ik0xOTcuNiAyNzcuMmwtMS42LTEuNmMtLjEtLjEtLjMtLjEtLjUgMGwtNy40IDcuNC0zLjEtMy4xYy0uMS0uMS0uMy0uMS0uNSAwbC0xLjYgMS42Yy0uMS4xLS4xLjMgMCAuNWwzLjMgMy4zIDEuNiAxLjZjLjEuMS4zLjEuNSAwbDEuNi0xLjYgNy42LTcuNmMuMy0uMS4zLS4zLjEtLjV6Ii8+PHBhdGggZD0iTTExODcuMSAxNDMuN2wtNTYuNS01Ni41Yy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTI1My41IDI1My41LTEwNi4yLTEwNi4yYy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTU2LjUgNTYuNWMtNS4xIDUuMS01LjEgMTIgMCAxNy4xbDExNC43IDExNC43IDU2LjUgNTYuNWM1LjEgNS4xIDEyIDUuMSAxNy4xIDBsNTYuNS01Ni41IDI2Mi0yNjJjNS4yLTMuNCA1LjItMTIgLjEtMTcuMXpNMTYzNC4xIDE2OS40bC0zNy43LTM3LjdjLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0xNjkuNSAxNjkuNS03MC4yLTcxLjljLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0zNy43IDM3LjdjLTMuNCAzLjQtMy40IDguNiAwIDEybDc3LjEgNzcuMSAzNy43IDM3LjdjMy40IDMuNCA4LjYgMy40IDEyIDBsMzcuNy0zNy43IDE3NC43LTE3Ni40YzEuNi0xLjcgMS42LTYuOS0uMS0xMC4zeiIvPjwvc3ZnPg==') no-repeat center center;
+    -ms-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    transition: all .3s ease;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+input[type=checkbox]:checked + label::after {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*Checkbox styles end*/
+
 .user-cabinet .offer-block__button {
     display: block;
     background: #000000;
@@ -241,7 +305,7 @@
 }
 
 .cell.cell_xl {
-    min-height: 160px;
+    min-height: 180px;
 }
 
 .cell .cell__text-wrapper {
@@ -253,6 +317,10 @@
     font-weight: 600;
 }
 
+.cell .cell__text.cell__text_margin {
+    margin: 20px 0 0;
+}
+
 .cell .cell__text.cell__text_name {
     margin: 0 0 20px 0;
 }
@@ -261,6 +329,20 @@
     position: absolute;
     width: 99%;
     top: 10px;
+    text-align: right;
+}
+
+.cell .cell__text.cell__text_bottom-text {
+    position: absolute;
+    width: 99%;
+    top: 160px;
+    text-align: right;
+}
+
+.cell .cell__text.cell__text_bottom-add {
+    position: absolute;
+    width: 99%;
+    top: 180px;
     text-align: right;
 }
 
@@ -294,7 +376,7 @@
     text-align: left;
 }
 
-.cell .cell-button {
+.cell .cell__button {
     display: inline-block;
     border: 1px solid #000000;
     background-color: #000000;
@@ -330,4 +412,144 @@
 }
 
 /*****************************************pop-up styles*/
+/*******************************************************/
+/*****************************************mobile styles*/
+@media (max-width: 1024px) {
+    .block-container {
+        width: 75%;
+    }
+
+    .offer-block .offer-block__wares {
+        width: 75%;
+    }
+}
+
+@media (max-width: 825px) {
+    .offer-block .offer-block__switch {
+        display: block;
+        width: 100%;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    .block-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .block-container .block-container__item {
+        text-align: left;
+        margin: 50px 25px;
+    }
+
+    input[type=checkbox] + label {
+        padding: 0 0 0 30px;
+    }
+
+    input[type=checkbox] + label::before {
+        left: 0;
+    }
+
+    input[type=checkbox] + label::after {
+        left: 0;
+    }
+
+    .block-container .block-container__button {
+        margin: 0 auto 10px;
+    }
+
+    .user-cabinet .offer-block__label_checkbox {
+        display: block;
+    }
+
+    .user-cabinet .offer-block__label {
+        margin: 0 0 0 -10px;
+    }
+
+    .offer-block .offer-block__ware-item {
+        min-height: 175px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 590px) {
+    .block-container .block-container__item {
+        width: 37%;
+    }
+
+    .cell .cell__text {
+        font-size: 12px;
+    }
+
+    .cell .cell__text.cell__text_total {
+        top: 105px;
+        text-align: left;
+    }
+
+    .cell .cell__button {
+        margin: 40px 0 0 0;
+    }
+
+    .cell.cell_xl {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 560px) {
+    .block-container .block-container__head {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 490px) {
+    .block-container .block-container__item {
+        margin: 50px auto 90px;
+        display: block;
+        width: 40%;
+    }
+
+    .block-container .block-container__name {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .block-container .block-container__item {
+        width: 50%;
+    }
+
+    .offer-block .offer-block__ware-item {
+        min-height: 150px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 385px) {
+    .cell .cell__text.cell__text_total {
+        top: 115px;
+    }
+}
+
+@media (max-width: 360px) {
+    .block-container .block-container__item {
+        width: 65%;
+    }
+}
+
+@media (max-width: 360px) {
+    .cell .cell__text.cell__text_total {
+        top: 145px;
+    }
+
+    .cell .cell__button {
+        margin: 65px 0 0 0;
+    }
+
+    .cell.cell_xl {
+        min-height: 250px;
+    }
+}
+/*****************************************mobile styles*/
 /*******************************************************/
