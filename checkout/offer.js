@@ -15,11 +15,11 @@ function checkboxActivation(checkboxElement, checkboxActiveClass) {
 checkboxActivation('.offer-block__place_checkbox', 'active');
 
 function blockSwitch(element1, element2, element3, toggledClass) {
-        event.preventDefault();
-        event.stopPropagation();
-        $(element1).hide();
-        $(element2).css('display', 'inline-block');
-        $(element3).toggleClass(toggledClass)
+    event.preventDefault();
+    event.stopPropagation();
+    $(element1).hide();
+    $(element2).css('display', 'inline-block');
+    $(element3).toggleClass(toggledClass)
 }
 
 $('.offer-block__button').on('click', function () {

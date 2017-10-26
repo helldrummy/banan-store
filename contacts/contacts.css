@@ -6,17 +6,21 @@
     max-width: 1366px;
     margin: 0 auto;
 }
+
+.contacts-block .contacts-block__block {
+    padding: 0 0 0 5px;
+}
 /****************************************general styles*/
 /*******************************************************/
 /*****************************registration block markup*/
 .contacts-block .contacts-block__text {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .contacts-block .contacts-block__text.contacts-block__text_add {
     display: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .contacts-block .contacts-block__text_margin {
@@ -25,7 +29,6 @@
 
 .contacts-block .contacts-block__number {
     font-size: 20px;
-    font-weight: 600;
     margin: 0 0 20px 0;
 }
 
@@ -33,12 +36,12 @@
     display: inline-block;
     text-decoration: underline;
     color: #000000;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .contacts-block .contacts-block__shops {
-    border-top: 2px solid#000000;
-    padding: 35px 0 0 0;
+    border-top: 1px solid#000000;
+    padding: 35px 0 0 5px;
     min-height: 440px;
 }
 
@@ -59,6 +62,7 @@
 
 .contacts-block .contacts-block__city-shop {
     margin: 0 0 15px 0;
+    font-size: 14px;
 }
 /*****************************registration block markup*/
 /*******************************************************/

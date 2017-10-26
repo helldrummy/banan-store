@@ -1,7 +1,7 @@
 /*******************************************************/
 /****************************************general styles*/
 .about {
-    margin: 150px 0 0 0;
+    margin: 0 auto;
     text-align: center;
 }
 /****************************************general styles*/
@@ -9,7 +9,7 @@
 /************************************about block markup*/
 .about .about__logo-image {
     display: block;
-    margin: 0 auto 75px;
+    margin: 0 auto 85px;
     max-width: 200px;
     width: 100%;
 }

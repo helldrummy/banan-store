@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../images/32x32.png" type="image/png">
     <link rel="apple-touch-icon" sizes="56x56" href="../images/56x56.png">
     <link rel="apple-touch-icon" sizes="57x57" href="../images/57x57.png">
-    <title>Offer page</title>
+    <title>Оформить заказ - Banan</title>
     <link rel="stylesheet" href="offer.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -18,8 +18,8 @@
 <!-----------------------------------------------header begin---------------------------------------------------------->
 <div class="header">
     <div class="header__item header__item_first"><a href="#">Бесплатная доставка по Украине 1-2 дня</a></div>
-    <div class="header__item header__item_first"><a href="#">Бесплатный возврат или обмен 30 дней</a></div>
-    <div class="header__item header__item_first"><a href="#">Скидка 5% при оплате картой</a></div>
+    <div class="header__item header__item_second"><a href="#">Бесплатный возврат или обмен 30 дней</a></div>
+    <div class="header__item header__item_third"><a href="#">Скидка 5% при оплате картой</a></div>
 </div>
 <!------------------------------------------------header end----------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
@@ -31,7 +31,7 @@
         <div class="menu__block">
             <div class="menu__item"><a href="callto:+380937604251">093 760 42 51</a></div>
             <div class="menu__item"><a href="../support/support.html">Поддержка/FAQ</a></div>
-            <div class="menu__item"><a href="../payment-shipping/payment-shipping.html">Оплата и доставка</a></div>
+            <div class="menu__item"><a href="../policy/payment-shipping.html">Оплата и доставка</a></div>
             <div class="menu__item"><a href="../about/about.html">О нас</a></div>
             <div class="menu__item"><a href="../contacts/contacts.html">Контакты</a></div>
             <div class="menu__item"><a target="_blank" href="https://www.instagram.com/bananclothing/">Instagram</a>
@@ -49,7 +49,7 @@
             <img src="../images/banan-logo_black.png" alt="banan store logotype" class="head-block__logo-img">
         </a>
         <div class="head-block__main-sections">
-            <a href="../man-clothing/man-clothing.html"
+            <a href="../mens/man-clothing.html"
                class="head-block__button head-block__button_woman category-button">Женское</a>
             <a href="#" class="head-block__button head-block__button_man category-button">Мужское</a>
         </div>
@@ -59,10 +59,10 @@
         <p class="head-block__cart-counter">: 1</p>
         <a href="#" class="head-block__user-item head-block__user-item_registered-user">Личный кабинет</a>
         <a href="#" class="head-block__user-item">Вход</a>
-        <a target="_blank" href="../registration-page/registration.html">
+        <a target="_blank" href="../login/registration.html">
             <div class="head-block__icon head-block__icon_user"></div>
         </a>
-        <a target="_blank" href="../cart-page/cart-page.html">
+        <a target="_blank" href="../cart/cart-page.html">
             <div class="head-block__icon head-block__icon_cart"></div>
         </a>
     </div>
@@ -101,7 +101,7 @@
             </div>
             <div class="offer-block__input">
                 <label class="offer-block__label">Телефон</label>
-                <input name="number" required type="text" class="offer-block__place">
+                <input name="number" data-mask="+38(000)000-00-00" maxlength="13" required type="text" class="offer-block__place">
             </div>
             <div class="offer-block__input">
                 <input class="offer-block__place offer-block__place_checkbox" id="checkbox" type="checkbox" name="shipping-checkbox">
@@ -109,7 +109,7 @@
             </div>
         </form>
     </div>
-    <p class="offer-block__button offer-block__toggle">Продолжить</p>
+    <input type="submit" form="offer" value="Продолжить"  class="offer-block__button offer-block__toggle">
     <!----------------------------------------------------------------------------------------------------------------->
     <div class="offer-block__wares">
         <div class="offer-block__top-wrap">
@@ -163,7 +163,6 @@
             <div class="offer-block__total cell-10">749 грн</div>
         </div>
         <div class="cell">
-            <p class="cell__text cell__text_name">Доставка</p>
             <div class="cell__user-info">
                 <p class="cell__text">Киев</p>
                 <p class="cell__text">Отделение Новой Почты №93</p>
@@ -178,11 +177,9 @@
                 <option class="cell__select-item" selected value="card payment">Оплата картой (скидка 5%)</option>
                 <option class="cell__select-item" value="shipping payment">Оплата наложенным платежом</option>
             </select>
-            <p class="cell__text cell__text_side-text">Сумма без скидки: 1098 грн</p>
-            <p class="cell__text cell__text_add-text">Скидка: 5%</p>
         </div>
         <div class="cell">
-            <p class="cell__text cell__text_side-text">Сумма к оплате: 1043,1 грн</p>
+            <p class="cell__text cell__text_side-text cell__text_total">Сумма к оплате: 1043,1 грн</p>
             <div class="cell__buttons-wrap">
                 <p class="cell-button cell-button_back">Назад</p>
                 <p class="cell-button cell-button_confirm cell-button_black">Оформить заказ</p>
@@ -195,6 +192,7 @@
 <script src="../js/jquery-3.1.1.js"></script>
 <script src="../js/slick.js"></script>
 <script src="offer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

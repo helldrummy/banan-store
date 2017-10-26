@@ -2,10 +2,10 @@
 /****************************************general styles*/
 .payment-shipping .info {
     width: 100%;
-    max-width: 90%;
+    max-width: 82%;
 
     display: block;
-    margin: 0 auto 115px;
+    margin: 0 auto 130px;
 }
 /****************************************general styles*/
 /*******************************************************/
@@ -50,7 +50,20 @@
 
     .payment-shipping .info .info__text {
         font-size: 14px;
+        display: none;
     }
+
+    .payment-shipping .info .info__text.display-block {
+        display: block;
+    }
+
+    .payment-shipping .info {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+
 }
 /*******************************************************/
 /*****************************************mobile styles*/

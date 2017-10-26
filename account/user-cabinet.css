@@ -12,6 +12,10 @@
     width: 50%;
 }
 
+.user-cabinet .wrapper {
+    margin: 0 auto 30px;
+}
+
 .cell-10 {
     width: 10%;
 }
@@ -39,7 +43,7 @@
 
 .block-container .block-container__item {
     display: inline-block;
-    margin: 0 50px 50px 0;
+    margin: 24px 50px 50px 0;
     width: 30%;
     vertical-align: top;
 }
@@ -72,6 +76,7 @@
     cursor: pointer;
     background-color: black;
     color: #ffffff;
+    font-size: 14px;
 }
 
 .block-container .block-container__checkbox-block {
@@ -84,11 +89,24 @@
 }
 
 .block-container .block-container__checkbox {
+    content: ' ';
+    position: absolute;
+    left: -15px;
+    top: 0;
     width: 15px;
     height: 15px;
-    border: 2px solid #000000;
-    cursor: pointer;
+    display: block;
+    background: white;
+    border: 1px solid #000000;
 }
+
+input[type=checkbox]:checked + label::after {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
 
 /********************************user info block styles*/
 /*******************************************************/
@@ -172,6 +190,9 @@
 }
 
 /*Checkbox styles begin*/
+.offer-block .offer-block__label_checkbox {
+    display: inline-block;
+}
 
 input[type=checkbox] {
     opacity: 0;
@@ -184,7 +205,7 @@ input[type=checkbox] + label {
     cursor: pointer;
     font-size: 16px;
     float: left;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 14px;
 }
 
 input[type=checkbox] + label ~ label {
@@ -196,8 +217,8 @@ input[type=checkbox] + label::before {
     position: absolute;
     left: -15px;
     top: 0;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     display: block;
     background: white;
     border: 1px solid #000000;
@@ -207,9 +228,9 @@ input[type=checkbox] + label::after {
     content: ' ';
     position: absolute;
     left: -14px;
-    top: 0;
-    width: 20px;
-    height: 20px;
+    top: 1px;
+    width: 14px;
+    height: 14px;
     display: block;
     z-index: 1;
     background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE4MS4yIDI3MyAxNyAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxODEuMiAyNzMgMTcgMTYiPjxwYXRoIGQ9Ik0tMzA2LjMgNTEuMmwtMTEzLTExM2MtOC42LTguNi0yNC04LjYtMzQuMyAwbC01MDYuOSA1MDYuOS0yMTIuNC0yMTIuNGMtOC42LTguNi0yNC04LjYtMzQuMyAwbC0xMTMgMTEzYy04LjYgOC42LTguNiAyNCAwIDM0LjNsMjMxLjIgMjMxLjIgMTEzIDExM2M4LjYgOC42IDI0IDguNiAzNC4zIDBsMTEzLTExMyA1MjQtNTI0YzctMTAuMyA3LTI1LjctMS42LTM2eiIvPjxwYXRoIGZpbGw9IiMzNzM3MzciIGQ9Ik0xOTcuNiAyNzcuMmwtMS42LTEuNmMtLjEtLjEtLjMtLjEtLjUgMGwtNy40IDcuNC0zLjEtMy4xYy0uMS0uMS0uMy0uMS0uNSAwbC0xLjYgMS42Yy0uMS4xLS4xLjMgMCAuNWwzLjMgMy4zIDEuNiAxLjZjLjEuMS4zLjEuNSAwbDEuNi0xLjYgNy42LTcuNmMuMy0uMS4zLS4zLjEtLjV6Ii8+PHBhdGggZD0iTTExODcuMSAxNDMuN2wtNTYuNS01Ni41Yy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTI1My41IDI1My41LTEwNi4yLTEwNi4yYy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTU2LjUgNTYuNWMtNS4xIDUuMS01LjEgMTIgMCAxNy4xbDExNC43IDExNC43IDU2LjUgNTYuNWM1LjEgNS4xIDEyIDUuMSAxNy4xIDBsNTYuNS01Ni41IDI2Mi0yNjJjNS4yLTMuNCA1LjItMTIgLjEtMTcuMXpNMTYzNC4xIDE2OS40bC0zNy43LTM3LjdjLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0xNjkuNSAxNjkuNS03MC4yLTcxLjljLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0zNy43IDM3LjdjLTMuNCAzLjQtMy40IDguNiAwIDEybDc3LjEgNzcuMSAzNy43IDM3LjdjMy40IDMuNCA4LjYgMy40IDEyIDBsMzcuNy0zNy43IDE3NC43LTE3Ni40YzEuNi0xLjcgMS42LTYuOS0uMS0xMC4zeiIvPjwvc3ZnPg==') no-repeat center center;
@@ -230,6 +251,7 @@ input[type=checkbox]:checked + label::after {
 }
 
 /*Checkbox styles end*/
+
 
 .user-cabinet .offer-block__button {
     display: block;
@@ -260,6 +282,7 @@ input[type=checkbox]:checked + label::after {
 .offer-block .offer-block__item-name {
     display: inline-block;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .offer-block .offer-block__ware-item {
@@ -274,10 +297,11 @@ input[type=checkbox]:checked + label::after {
 .offer-block .offer-block__ware-info {
     display: inline-block;
     padding: 10px 0 0 15px;
+    font-size: 14px;
 }
 
 .offer-block .offer-block__text {
-
+    font-size: 14px;
 }
 
 .offer-block .offer-block__text.offer-block__text_gray {
@@ -287,11 +311,13 @@ input[type=checkbox]:checked + label::after {
 .offer-block .offer-block__number {
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
 }
 
 .offer-block .offer-block__total {
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
 }
 
 /****************************************Ware-block end*/
@@ -314,7 +340,6 @@ input[type=checkbox]:checked + label::after {
 
 .cell .cell__text {
     font-size: 14px;
-    font-weight: 600;
 }
 
 .cell .cell__text.cell__text_margin {
@@ -472,6 +497,49 @@ input[type=checkbox]:checked + label::after {
     }
 }
 
+@media (max-width: 680px) {
+    .offer-block .offer-block__text {
+        font-size: 13px;
+    }
+
+    .offer-block .offer-block__total {
+        font-size: 13px;
+    }
+
+    .offer-block .offer-block__item-name {
+        font-size: 13px;
+        padding: 0 0 0 20px;
+    }
+
+    .offer-block .offer-block__number {
+        text-align: left;
+    }
+
+    .cell-25 {
+        width: 20%;
+    }
+
+    .cell-45 {
+        width: 40%;
+    }
+
+    .cell-10 {
+        width: 15%;
+    }
+
+    .offer-block .offer-block__wares {
+        width: 100%;
+    }
+
+    .offer-block .offer-block__wares {
+        padding: 0 5px;
+    }
+
+    .offer-block .offer-block__ware-info {
+        padding: 10px 0 0 0;
+    }
+}
+
 @media (max-width: 590px) {
     .block-container .block-container__item {
         width: 37%;
@@ -524,6 +592,15 @@ input[type=checkbox]:checked + label::after {
         min-height: 150px;
         margin: 0;
     }
+
+    .offer-block .offer-block__item-name {
+        padding: 0 0 0 5px;
+    }
+
+    .offer-block .offer-block__item-name.cell-10 {
+        padding: 0 0 0 15px;
+    }
+
 }
 
 @media (max-width: 385px) {
@@ -536,9 +613,7 @@ input[type=checkbox]:checked + label::after {
     .block-container .block-container__item {
         width: 65%;
     }
-}
 
-@media (max-width: 360px) {
     .cell .cell__text.cell__text_total {
         top: 145px;
     }

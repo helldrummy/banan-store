@@ -4,6 +4,27 @@
 
 }
 
+.cart-page .pop-up {
+    padding: 35px 75px;
+    max-width: 350px;
+}
+
+.cart-page .pop-up .pop-up__text {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+.cart-page .button {
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 35px;
+    cursor: pointer;
+}
+
 .cell-5 {
     width: 5%;
 }
@@ -53,7 +74,7 @@
 
 }
 
-.offer-block .offer-block__item-name_block {
+.offer-block .offer-block__item-name.offer-block__item-name_block {
     display: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -98,6 +119,15 @@
     height: 15px;
     padding: 0 0 0 55px;
     background: url(../images/close-btn.svg) no-repeat center center;
+    background-size: 24%;
+    cursor: pointer;
+}
+
+.offer-block .offer-block__image-block .offer-block__delete-button {
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: none;
     cursor: pointer;
 }
 
@@ -117,7 +147,7 @@
     display: inline-block;
     font-weight: 600;
     margin: 0 7px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .offer-block .offer-block__number_count {
@@ -144,7 +174,7 @@
 .cell .cell__text {
     font-size: 16px;
     font-weight: 600;
-    margin: 0 0 55px 0;
+    margin: 0 0 40px 0;
 }
 
 .offer-block__number-block.offer-block__cost-block .cell__text.cell__text_add {
@@ -157,6 +187,7 @@
     top: 65px;
     text-align: right;
     min-height: 150px;
+    margin: 0 0 30px 0;
 }
 
 .cell .cell-button {
@@ -164,9 +195,9 @@
     border: 1px solid #000000;
     text-align: center;
     padding: 10px 35px;
-    margin: 0 5px;
     cursor: pointer;
-    font-weight: 400;
+    min-width: 230px;
+    font-size: 15px;
 }
 
 .cell .cell-button.cell-button_black {
@@ -282,6 +313,7 @@
         height: 30px;
         text-align: center;
         margin: 0 3px;
+        padding: 3px 0 0 0;
     }
 
     .offer-block .offer-block__number-block {

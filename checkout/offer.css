@@ -53,6 +53,7 @@
     font-size: 25px;
     font-weight: 600;
     margin: 0 0 30px 0;
+    padding: 15px 0 0 0;
 }
 
 /*************************************Input-block begin*/
@@ -67,7 +68,7 @@
 }
 
 .offer-block .offer-block__input {
-    margin: 0 auto 30px;
+    margin: 0 auto 23px;
     text-align: left;
 }
 
@@ -79,7 +80,7 @@
 }
 
 .offer-block .offer-block__label {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     margin: 0 0 15px 0;
 }
@@ -100,7 +101,7 @@ input[type=checkbox] + label {
     cursor: pointer;
     font-size: 16px;
     float: left;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
 }
 
 input[type=checkbox] + label ~ label {
@@ -111,9 +112,9 @@ input[type=checkbox] + label::before {
     content: ' ';
     position: absolute;
     left: -15px;
-    top: 0px;
-    width: 25px;
-    height: 25px;
+    top: 0;
+    width: 15px;
+    height: 15px;
     display: block;
     background: white;
     border: 1px solid #000000;
@@ -123,9 +124,9 @@ input[type=checkbox] + label::after {
     content: ' ';
     position: absolute;
     left: -14px;
-    top: 0;
-    width: 23px;
-    height: 23px;
+    top: 1px;
+    width: 14px;
+    height: 14px;
     display: block;
     z-index: 1;
     background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE4MS4yIDI3MyAxNyAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxODEuMiAyNzMgMTcgMTYiPjxwYXRoIGQ9Ik0tMzA2LjMgNTEuMmwtMTEzLTExM2MtOC42LTguNi0yNC04LjYtMzQuMyAwbC01MDYuOSA1MDYuOS0yMTIuNC0yMTIuNGMtOC42LTguNi0yNC04LjYtMzQuMyAwbC0xMTMgMTEzYy04LjYgOC42LTguNiAyNCAwIDM0LjNsMjMxLjIgMjMxLjIgMTEzIDExM2M4LjYgOC42IDI0IDguNiAzNC4zIDBsMTEzLTExMyA1MjQtNTI0YzctMTAuMyA3LTI1LjctMS42LTM2eiIvPjxwYXRoIGZpbGw9IiMzNzM3MzciIGQ9Ik0xOTcuNiAyNzcuMmwtMS42LTEuNmMtLjEtLjEtLjMtLjEtLjUgMGwtNy40IDcuNC0zLjEtMy4xYy0uMS0uMS0uMy0uMS0uNSAwbC0xLjYgMS42Yy0uMS4xLS4xLjMgMCAuNWwzLjMgMy4zIDEuNiAxLjZjLjEuMS4zLjEuNSAwbDEuNi0xLjYgNy42LTcuNmMuMy0uMS4zLS4zLjEtLjV6Ii8+PHBhdGggZD0iTTExODcuMSAxNDMuN2wtNTYuNS01Ni41Yy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTI1My41IDI1My41LTEwNi4yLTEwNi4yYy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTU2LjUgNTYuNWMtNS4xIDUuMS01LjEgMTIgMCAxNy4xbDExNC43IDExNC43IDU2LjUgNTYuNWM1LjEgNS4xIDEyIDUuMSAxNy4xIDBsNTYuNS01Ni41IDI2Mi0yNjJjNS4yLTMuNCA1LjItMTIgLjEtMTcuMXpNMTYzNC4xIDE2OS40bC0zNy43LTM3LjdjLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0xNjkuNSAxNjkuNS03MC4yLTcxLjljLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0zNy43IDM3LjdjLTMuNCAzLjQtMy40IDguNiAwIDEybDc3LjEgNzcuMSAzNy43IDM3LjdjMy40IDMuNCA4LjYgMy40IDEyIDBsMzcuNy0zNy43IDE3NC43LTE3Ni40YzEuNi0xLjcgMS42LTYuOS0uMS0xMC4zeiIvPjwvc3ZnPg==') no-repeat center center;
@@ -164,13 +165,16 @@ input[type=checkbox]:checked + label::after {
     display: block;
     background: #000000;
     color: #ffffff;
-    padding: 12px 35px;
-    margin: 0 0 18px 0;
+    padding: 12px 40px;
+    margin: 0 0 50px 0;
     border-style: none;
     position: absolute;
-    bottom: -60px;
-    right: 60px;
+    bottom: -150px;
+    right: 80px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 230px;
 }
 
 /***************************************Input-block end*/
@@ -189,6 +193,7 @@ input[type=checkbox]:checked + label::after {
 .offer-block .offer-block__item-name {
     display: inline-block;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .offer-block .offer-block__ware-item {
@@ -202,11 +207,11 @@ input[type=checkbox]:checked + label::after {
 
 .offer-block .offer-block__ware-info {
     display: inline-block;
-    padding: 10px 0 0 15px;
+    padding: 22px 0 0 21px;
 }
 
 .offer-block .offer-block__text {
-
+    font-size: 14px;
 }
 
 .offer-block .offer-block__text.offer-block__text_gray {
@@ -216,11 +221,13 @@ input[type=checkbox]:checked + label::after {
 .offer-block .offer-block__number {
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
 }
 
 .offer-block .offer-block__total {
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
 }
 
 /****************************************Ware-block end*/
@@ -230,16 +237,19 @@ input[type=checkbox]:checked + label::after {
     position: relative;
     border-top: 1px solid #000000;
     padding: 10px 5px 30px;
-    min-height: 135px;
+    min-height: 120px;
 }
 
 .cell .cell__text {
     font-size: 14px;
-    font-weight: 600;
 }
 
 .cell .cell__text.cell__text_name {
     margin: 0 0 20px 0;
+}
+
+.cell .cell__text.cell__text_total {
+   font-weight: 600;
 }
 
 .cell .cell__text.cell__text_side-text {
@@ -265,7 +275,7 @@ input[type=checkbox]:checked + label::after {
     min-width: 250px;
     font-weight: 600;
     border: 1px solid #000000;
-    margin: 0 0 30px 0;
+    margin: 0 0 25px 0;
 }
 
 .cell .cell__select-item {
@@ -277,13 +287,14 @@ input[type=checkbox]:checked + label::after {
     width: 99%;
     top: 65px;
     text-align: right;
+    margin: 0 0 50px 0;
 }
 
 .cell .cell-button {
     display: inline-block;
     border: 1px solid #000000;
     text-align: center;
-    padding: 10px 35px;
+    padding: 8px 35px;
     cursor: pointer;
 }
 
@@ -384,7 +395,6 @@ input[type=checkbox]:checked + label::after {
     }
 }
 
-
 @media (max-width: 500px) {
     .offer-block .offer-block__form {
         max-width: 250px;
@@ -393,7 +403,7 @@ input[type=checkbox]:checked + label::after {
 }
 
 @media (max-width: 440px) {
-   .offer-block .offer-block__button {
+    .offer-block .offer-block__button {
         max-width: 70%;
     }
 
