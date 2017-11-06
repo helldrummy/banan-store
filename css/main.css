@@ -96,6 +96,10 @@ a, a:hover, a:visited {
     float: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .transition {
     transition: 1.5s;
 }
@@ -259,6 +263,7 @@ a, a:hover, a:visited {
     font-weight: 400;
     color: #ffffff;
     text-transform: none;
+    padding: 0 0 2px 0;
 }
 
 .header .header__item:after {
@@ -266,18 +271,17 @@ a, a:hover, a:visited {
     margin: 0 auto;
     content: "";
     height: 1px;
-    max-width: 260px;
+    max-width: 266px;
     width: 0;
     background-color: #ffffff;
-    transition: width .7s ease-in-out;
 }
 
 .header .header__item.header__item_second:after {
-    max-width: 249px;
+    max-width: 259px;
 }
 
 .header .header__item.header__item_third:after {
-    max-width: 188px;
+    max-width: 196px;
 }
 
 .header .header__item.header__item_first:hover:after,
@@ -484,7 +488,7 @@ a, a:hover, a:visited {
 /************************************burger menu markup*/
 
 .b-a, .bar, .bar:before, .bar:after {
-    transition: all .25s;
+    /*transition: all .25s;*/
     content: "";
     position: absolute;
     left: 0;
@@ -496,7 +500,7 @@ a, a:hover, a:visited {
 
 .menu-collapsed {
     display: none;
-    transition: all .25s;
+    /*transition: all .25s;*/
     position: absolute;
     top: 45px;
     left: 25px;
@@ -508,7 +512,7 @@ a, a:hover, a:visited {
 }
 
 .menu-collapsed .menu__block {
-    transition: all 0s;
+    /*transition: all 0s;*/
     position: absolute;
     left: -9000px;
     text-align: left;
@@ -544,13 +548,13 @@ a, a:hover, a:visited {
 }
 
 .b-a-expanded, .menu-expanded .bar:before, .menu-expanded .bar:after {
-    transition: all .25s;
+    /*transition: all .25s;*/
     top: -0px;
     z-index: 1000;
 }
 
 .menu-expanded {
-    transition: all .25s;
+    /*transition: all .25s;*/
 
     position: fixed;
     text-align: center;
@@ -564,7 +568,7 @@ a, a:hover, a:visited {
 }
 
 .menu-expanded .menu__block {
-    transition: all 0s;
+    /*transition: all 0s;*/
     position: relative;
     left: 0;
     z-index: 2;
@@ -577,7 +581,7 @@ a, a:hover, a:visited {
 }
 
 .menu-expanded a {
-    transition: all .15s;
+    /*transition: all .15s;*/
     text-decoration: none;
     font-size: 24px;
     padding: 0 0 0 30px;
@@ -588,7 +592,7 @@ a, a:hover, a:visited {
 
 .menu-expanded .bar {
     background-color: transparent;
-    transition: all .25s;
+    /*transition: all .25s;*/
     right: 0;
 }
 

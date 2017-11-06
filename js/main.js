@@ -59,7 +59,7 @@ $(document).ready(function () {
         var element = $(elementClassName);
 
         if (!element.hasClass(animationClass)) {
-            var isHigher = $(window).scrollTop() > element.offset().top - 25;
+            var isHigher = $(window).scrollTop() > element.offset().top - 55;
 
             if (isHigher) {
                 element.addClass(animationClass);
@@ -118,13 +118,13 @@ var Page = {
     Youtube: {
         getQuality: function (width) {
             if (width > 1920) {
-                q = 'highres';
+                q = 'medium';
             } else if (width < 1920 && width >= 1280) {
-                q = 'hd1080';
+                q = 'medium';
             } else if (width < 1280 && width >= 853) {
-                q = 'hd720';
+                q = 'medium';
             } else if (width < 853 && width >= 640) {
-                q = 'large';
+                q = 'medium';
             } else if (width < 640 && width >= 480) {
                 q = 'medium';
             } else if (width < 480) {
@@ -146,7 +146,7 @@ var Page = {
                     cc_load_policy: 0,
                     iv_load_policy: 3,
                     fs: 0,
-                    rel: 0,
+                    rel: 0
                 },
                 events: {
                     'onReady': onPlayerReady,
@@ -173,6 +173,11 @@ var Page = {
             }
             return width * ($(window).height() / height);
         }
+    },
+    videoSound: function (video) {
+       $('.main-block').on('click', function () {
+           video.mute();
+       })
     },
     init: function () {
     }
@@ -201,7 +206,7 @@ function onPlayerReady(event) {
 //on play end
 function onPlayerStateChange(event) {
     if (event.data == 0) {
-        event.target.mute();
+        //event.target.mute();
         event.target.playVideo();
     }
 }

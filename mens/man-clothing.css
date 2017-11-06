@@ -71,6 +71,25 @@
 /*************************************main block markup*/
 /*******************************************************/
 /*****************************************mobile styles*/
+@media (max-width: 1360px) {
+    .item-block {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .item-block {
+        max-width: 215px;
+    }
+}
+
+@media (max-width: 960px) {
+    .item-block {
+        max-width: 315px;
+    }
+}
+
+
 @media (max-width: 670px) {
     .item-block .item-block__text {
         padding: 0;
