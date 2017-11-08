@@ -174,12 +174,14 @@ var Page = {
             return width * ($(window).height() / height);
         }
     },
-    videoSound: function (video) {
-       $('.main-block').on('click', function () {
-           video.mute();
-       })
+    videoSound: function (trigger, video) {
+        $(trigger).on('click', function () {
+            console.log('mute');
+            $(video).muted();
+        })
     },
     init: function () {
+        Page.videoSound('.main-block', '#player');
     }
 };
 //run youtube player
@@ -193,13 +195,15 @@ if (Page.checkMobile()) {
     var player;
 }
 function onYouTubePlayerAPIReady() {
-    Page.Youtube.ajaxVideoBlockLoad('_EyZUTDAH0U', 'player', 1920, 1080);
+    Page.Youtube.ajaxVideoBlockLoad('Un3i-HCG2w0', 'player', 1920, 1080);
 }
 
 //on player ready
 function onPlayerReady(event) {
+    console.log(event);
+    console.log(event.target);
     event.target.setPlaybackQuality(Page.Youtube.getQuality($(window).width()));
-   // event.target.mute();
+    //event.target.mute();
     event.target.playVideo();
 }
 
